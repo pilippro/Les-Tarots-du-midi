@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC82DB0C967A2E46A81102B8ABD841D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		104571D3C06BAE2EEE87E00399C70914 /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981B42C920BEDC72386A52C7F24990C2 /* UIStoryboard+StoryboardResource.swift */; };
+		131CE60C6A85EDBB4274D6B921894AD5 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CA3BB6D5E9E5A3A1EC1FAB2F44F88 /* ReuseIdentifierProtocol.swift */; };
+		14419A1764B82B06292F236B38221441 /* Pods-LTDMapi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E42D0AEA67F7520FBDA4FA6ED0A5D0 /* Pods-LTDMapi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15FCE659A8B900CFE24250583CF2721C /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A6447DAC5C3C363C53BDAC28E8FF70 /* StringResource.swift */; };
+		162A9ED1642C65F528B1261BD3B59A9B /* Pods-Les Tarots du midi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A28BD78214172E8BF0871FAA350D0827 /* Pods-Les Tarots du midi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1857E6CE4B92B2760FC4DF19C06B96C9 /* Pods-Les Tarots du midi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23675481F8836754535F9E4EF8B2101F /* Pods-Les Tarots du midi-dummy.m */; };
+		2493E5CF19FA182CE90691A94F352065 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788E180E8DEB531808D90818EDA15DF8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; };
+		2CBC79554821DEBE064DFC2B14CC3CE8 /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE7D6068261F2150B359A660445664B /* StoryboardSegueIdentifierProtocol.swift */; };
+		3558F96151C63C55AB5A52AD37EC343C /* ColorPaletteItemResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5A33EF4E61728110676968E667BB1B /* ColorPaletteItemResource.swift */; };
+		3DC115ED162938A16F9561AE5D0825A2 /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57914255321F11F140DE905513158250 /* UIColor+ColorResource.swift */; };
+		58F219E583B1EF5CE1731BA800B71D23 /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D09422FD935C77CEAA81227F1C5E1B1 /* StoryboardResource.swift */; };
+		593C2C443774964476E4BC2CA99C6F0E /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F3651A1B235761D47BF7811DBCFA7 /* UINib+NibResource.swift */; };
+		5D135A54A15C856884D3D6E1FC0D2A76 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFD83E7A62CB928C7AEFE2D67C7FFB /* Validatable.swift */; };
+		5DA9FE2BFC626204F19A0E2D530934A3 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09ACA01DAA682FF80F96CC9C7EA8A5 /* Data+FileResource.swift */; };
+		63DF886243592535E89D5A0BD56E94ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		67E4104728A1D41CE085B78772AE1FB3 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B20093EE81E4037B0F6E9CAE13D3BD /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70B13DB049B32F528E5A11D0DD71DC5F /* ColorPaletteItemResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE45C2BEDAEA680063E011B6902A1DD /* ColorPaletteItemResource+UIKit.swift */; };
+		7B6BB68931EB34D1461D7C703498EFAC /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8707773F45F41201544C7705F7137599 /* R.swift.Library-dummy.m */; };
+		7E6993E9E19A800F4F357D5B7337B525 /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A279D0059505740269142341978BC /* NibResource+UIKit.swift */; };
+		856B1E95EE8D535ED1402AC2BA74A07C /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAC5FA27D3EF80A4DAA9C312CB18AF6 /* UIImage+ImageResource.swift */; };
+		8C43F9A62CF5F402DD9BDBE76B64A70D /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D396BF094D0C8667F4C2694BD5EDE /* UIFont+FontResource.swift */; };
+		937C31AEE17D89C6A87DE336104DB660 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A172E2F681F4AB998554F8502D0E5F3 /* Identifier.swift */; };
+		9C8AD35A0E74B0681EE3637EDDE3929E /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FD446F1512B415E477227A89A5E9A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; };
+		A20C026B9DB1509ED257F1783503FADC /* Pods-LTDMapi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CA3B02DB3A0C2C3B3C3B6AD02610A9 /* Pods-LTDMapi-dummy.m */; };
+		A2624DCC7D4C5F01718D04A89AA453FC /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8089AFAC464FE55DC25AF5427DB31DF /* NibResource.swift */; };
+		A3FA955BABE1C31F1260AB6601F6EF0B /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C9C9F5541F1087DBA2D0C88E7A451C /* UICollectionView+ReuseIdentifierProtocol.swift */; };
+		AA1D542971E5866A5BB7BD802C169686 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207BC4E72C03D702BC551E9A0A8FE14 /* UIStoryboard+StoryboardViewControllerResource.swift */; };
+		B36A34AAD174364806553DC5E7715C7C /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188655DBF1F850531B58912E9BE1677C /* UITableView+ReuseIdentifierProtocol.swift */; };
+		B94FC7228DE6E1B00D76068994D8BE22 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE510C2C5A244325677A5AB5D4533900 /* StoryboardViewControllerResource.swift */; };
+		BA2320566488A1D784D7F10891EC5414 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BD973955C623EA61D4E021846412CE69 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCA85E7B1A26E6A920F0B1DDB0939C /* StoryboardResourceWithInitialController+UIKit.swift */; };
+		D7497DF4B9AF2BDE328BA63EB01CC510 /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D8FD29AE72C64B68934148B97DE8C /* FontResource.swift */; };
+		E6C3A7A6E9829EF6DC779986EA856E48 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B198C4A71B3B6AE14874026A75C0AA /* ImageResource.swift */; };
+		E97B430E26718C16402EF324E7C9418D /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619386A49119037FD31F489378E5A48 /* UIViewController+NibResource.swift */; };
+		EAA1E601BB4B18E6A3C365F46A3369E7 /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FA2976ABDF80E0C24D09A52B7AE49 /* FileResource.swift */; };
+		F858DDE7DEF734D2F3FA3C3705962B08 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8856282A8742C9D3A9C08B593D63138A /* ColorResource.swift */; };
+		F9AFD9D7FAFEBD76D986D0A53E581D59 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C86D97CEF9559A8DB2D47953EC0E28 /* Bundle+FileResource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3DED6FF246FAB4DFAF3DFBFA4B54132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2771A8300F555EDA4556C1515A6E58B4;
+			remoteInfo = R.swift.Library;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0199EA67ABE7E184E52C2A29CFDF6C5C /* Pods-Les Tarots du midi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Les Tarots du midi-acknowledgements.plist"; sourceTree = "<group>"; };
+		146F3BB728938ABFB8FEBFF082929FF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F795811E4FCFA4C2FD94DD80180BC3 /* Pods-LTDMapi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTDMapi.debug.xcconfig"; sourceTree = "<group>"; };
+		1603373DECD56C83D6068C651AE2F67E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188655DBF1F850531B58912E9BE1677C /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		18B20093EE81E4037B0F6E9CAE13D3BD /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		19B198C4A71B3B6AE14874026A75C0AA /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		23675481F8836754535F9E4EF8B2101F /* Pods-Les Tarots du midi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Les Tarots du midi-dummy.m"; sourceTree = "<group>"; };
+		2A8CA3BB6D5E9E5A3A1EC1FAB2F44F88 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		2E8AE6F00C6F0376BDDCD798772A4D21 /* Pods-LTDMapi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTDMapi.release.xcconfig"; sourceTree = "<group>"; };
+		2E8FA2976ABDF80E0C24D09A52B7AE49 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		428F3651A1B235761D47BF7811DBCFA7 /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		49D4ABA114EB0A794645D424A18B69EC /* Pods-Les Tarots du midi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Les Tarots du midi.release.xcconfig"; sourceTree = "<group>"; };
+		4A7D8FD29AE72C64B68934148B97DE8C /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		5207BC4E72C03D702BC551E9A0A8FE14 /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+		529D396BF094D0C8667F4C2694BD5EDE /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		5619386A49119037FD31F489378E5A48 /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
+		57914255321F11F140DE905513158250 /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		58BFD83E7A62CB928C7AEFE2D67C7FFB /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		5B8A9780941B1F17E7FDD225755823B6 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		5C0B0A566BD22983F21D69077FAD4F59 /* Pods-LTDMapi-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTDMapi-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6861AFED70112E0EC97E329A5F874AB8 /* Pods_LTDMapi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LTDMapi.framework; path = "Pods-LTDMapi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D09422FD935C77CEAA81227F1C5E1B1 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
+		6DE45C2BEDAEA680063E011B6902A1DD /* ColorPaletteItemResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorPaletteItemResource+UIKit.swift"; path = "Library/UIKit/ColorPaletteItemResource+UIKit.swift"; sourceTree = "<group>"; };
+		6E0FD446F1512B415E477227A89A5E9A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
+		73D58D22E14237893DC4F9631C89D5C8 /* Pods-Les Tarots du midi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Les Tarots du midi.debug.xcconfig"; sourceTree = "<group>"; };
+		788E180E8DEB531808D90818EDA15DF8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		7A172E2F681F4AB998554F8502D0E5F3 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		8707773F45F41201544C7705F7137599 /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
+		8856282A8742C9D3A9C08B593D63138A /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
+		902C1CC6E35EF5220C6D83E485DAE8DE /* Pods-Les Tarots du midi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Les Tarots du midi-frameworks.sh"; sourceTree = "<group>"; };
+		917C2DCD568B9ABE1E89047154B772B7 /* Pods-LTDMapi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTDMapi-acknowledgements.markdown"; sourceTree = "<group>"; };
+		935713FA4130F926F7643C4B407D7291 /* Pods-LTDMapi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTDMapi-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A6447DAC5C3C363C53BDAC28E8FF70 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		981B42C920BEDC72386A52C7F24990C2 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		A1A4E7F9AAFFC593EAA14F086AE3A2AF /* Pods-Les Tarots du midi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Les Tarots du midi.modulemap"; sourceTree = "<group>"; };
+		A28BD78214172E8BF0871FAA350D0827 /* Pods-Les Tarots du midi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Les Tarots du midi-umbrella.h"; sourceTree = "<group>"; };
+		A2C86D97CEF9559A8DB2D47953EC0E28 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		AAC891382BA25BD17BF719F05B4A971F /* Pods-Les Tarots du midi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Les Tarots du midi-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		AD09ACA01DAA682FF80F96CC9C7EA8A5 /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		B8C22A9178BA2EBD48EB1748A020565E /* Pods_Les_Tarots_du_midi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Les_Tarots_du_midi.framework; path = "Pods-Les Tarots du midi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE7D6068261F2150B359A660445664B /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
+		BD6A279D0059505740269142341978BC /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
+		C8089AFAC464FE55DC25AF5427DB31DF /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		C9087B979C6A362DADD60ACC4E10CB8B /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rswift.framework; path = R.swift.Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA539F509F7C7D5AC399BF11B119C686 /* Pods-Les Tarots du midi-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Les Tarots du midi-resources.sh"; sourceTree = "<group>"; };
+		CFFC8B45FF6803A4B93BCEFEC4F2E539 /* Pods-LTDMapi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LTDMapi.modulemap"; sourceTree = "<group>"; };
+		D8FCA85E7B1A26E6A920F0B1DDB0939C /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		DCC9A7A711DBA6072F98C24C62B6E9C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5A33EF4E61728110676968E667BB1B /* ColorPaletteItemResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPaletteItemResource.swift; path = Library/Core/ColorPaletteItemResource.swift; sourceTree = "<group>"; };
+		EDAC5FA27D3EF80A4DAA9C312CB18AF6 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
+		EF3D548B56C2FB31DB8A58AB8BADAF73 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		F1C9C9F5541F1087DBA2D0C88E7A451C /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		F8E42D0AEA67F7520FBDA4FA6ED0A5D0 /* Pods-LTDMapi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTDMapi-umbrella.h"; sourceTree = "<group>"; };
+		F9CA3B02DB3A0C2C3B3C3B6AD02610A9 /* Pods-LTDMapi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTDMapi-dummy.m"; sourceTree = "<group>"; };
+		FE510C2C5A244325677A5AB5D4533900 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FB46749DD06974C3A4D92D35828BFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DF886243592535E89D5A0BD56E94ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D94A77FDE115DBF246F05DEFB4B26E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2320566488A1D784D7F10891EC5414 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D997B4C2926F49FB8A1F56D721108EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC82DB0C967A2E46A81102B8ABD841D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		197EFAAB52DE32F6298688F2D5122A8A /* Pods-Les Tarots du midi */ = {
+			isa = PBXGroup;
+			children = (
+				1603373DECD56C83D6068C651AE2F67E /* Info.plist */,
+				A1A4E7F9AAFFC593EAA14F086AE3A2AF /* Pods-Les Tarots du midi.modulemap */,
+				AAC891382BA25BD17BF719F05B4A971F /* Pods-Les Tarots du midi-acknowledgements.markdown */,
+				0199EA67ABE7E184E52C2A29CFDF6C5C /* Pods-Les Tarots du midi-acknowledgements.plist */,
+				23675481F8836754535F9E4EF8B2101F /* Pods-Les Tarots du midi-dummy.m */,
+				902C1CC6E35EF5220C6D83E485DAE8DE /* Pods-Les Tarots du midi-frameworks.sh */,
+				CA539F509F7C7D5AC399BF11B119C686 /* Pods-Les Tarots du midi-resources.sh */,
+				A28BD78214172E8BF0871FAA350D0827 /* Pods-Les Tarots du midi-umbrella.h */,
+				73D58D22E14237893DC4F9631C89D5C8 /* Pods-Les Tarots du midi.debug.xcconfig */,
+				49D4ABA114EB0A794645D424A18B69EC /* Pods-Les Tarots du midi.release.xcconfig */,
+			);
+			name = "Pods-Les Tarots du midi";
+			path = "Target Support Files/Pods-Les Tarots du midi";
+			sourceTree = "<group>";
+		};
+		4A27D38367A6D346E5F2979C95C6DD06 /* Pods-LTDMapi */ = {
+			isa = PBXGroup;
+			children = (
+				146F3BB728938ABFB8FEBFF082929FF6 /* Info.plist */,
+				CFFC8B45FF6803A4B93BCEFEC4F2E539 /* Pods-LTDMapi.modulemap */,
+				917C2DCD568B9ABE1E89047154B772B7 /* Pods-LTDMapi-acknowledgements.markdown */,
+				935713FA4130F926F7643C4B407D7291 /* Pods-LTDMapi-acknowledgements.plist */,
+				F9CA3B02DB3A0C2C3B3C3B6AD02610A9 /* Pods-LTDMapi-dummy.m */,
+				5C0B0A566BD22983F21D69077FAD4F59 /* Pods-LTDMapi-resources.sh */,
+				F8E42D0AEA67F7520FBDA4FA6ED0A5D0 /* Pods-LTDMapi-umbrella.h */,
+				14F795811E4FCFA4C2FD94DD80180BC3 /* Pods-LTDMapi.debug.xcconfig */,
+				2E8AE6F00C6F0376BDDCD798772A4D21 /* Pods-LTDMapi.release.xcconfig */,
+			);
+			name = "Pods-LTDMapi";
+			path = "Target Support Files/Pods-LTDMapi";
+			sourceTree = "<group>";
+		};
+		7D8AD7500C19392E0371DC5DE00B08B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCC9A7A711DBA6072F98C24C62B6E9C7 /* Info.plist */,
+				5B8A9780941B1F17E7FDD225755823B6 /* R.swift.Library.modulemap */,
+				AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */,
+				8707773F45F41201544C7705F7137599 /* R.swift.Library-dummy.m */,
+				EF3D548B56C2FB31DB8A58AB8BADAF73 /* R.swift.Library-prefix.pch */,
+				18B20093EE81E4037B0F6E9CAE13D3BD /* R.swift.Library-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/R.swift.Library";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8530A5E3294DC36F28ED9D2CB432EBF5 /* Pods */,
+				E11603940B20128FF60DD333EB268EC3 /* Products */,
+				FA0E4581DFCB58A07DA6706C1566C984 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8530A5E3294DC36F28ED9D2CB432EBF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF8B08C9A784562933EDC212720826A3 /* R.swift */,
+				CD9720FEE24CEC4844BD42E8BE102FCD /* R.swift.Library */,
+				E0F39804065A5BE6F9DD7CB3BE971D2F /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD9720FEE24CEC4844BD42E8BE102FCD /* R.swift.Library */ = {
+			isa = PBXGroup;
+			children = (
+				A2C86D97CEF9559A8DB2D47953EC0E28 /* Bundle+FileResource.swift */,
+				ED5A33EF4E61728110676968E667BB1B /* ColorPaletteItemResource.swift */,
+				6DE45C2BEDAEA680063E011B6902A1DD /* ColorPaletteItemResource+UIKit.swift */,
+				8856282A8742C9D3A9C08B593D63138A /* ColorResource.swift */,
+				AD09ACA01DAA682FF80F96CC9C7EA8A5 /* Data+FileResource.swift */,
+				2E8FA2976ABDF80E0C24D09A52B7AE49 /* FileResource.swift */,
+				4A7D8FD29AE72C64B68934148B97DE8C /* FontResource.swift */,
+				7A172E2F681F4AB998554F8502D0E5F3 /* Identifier.swift */,
+				19B198C4A71B3B6AE14874026A75C0AA /* ImageResource.swift */,
+				C8089AFAC464FE55DC25AF5427DB31DF /* NibResource.swift */,
+				BD6A279D0059505740269142341978BC /* NibResource+UIKit.swift */,
+				2A8CA3BB6D5E9E5A3A1EC1FAB2F44F88 /* ReuseIdentifierProtocol.swift */,
+				6D09422FD935C77CEAA81227F1C5E1B1 /* StoryboardResource.swift */,
+				D8FCA85E7B1A26E6A920F0B1DDB0939C /* StoryboardResourceWithInitialController+UIKit.swift */,
+				BCE7D6068261F2150B359A660445664B /* StoryboardSegueIdentifierProtocol.swift */,
+				FE510C2C5A244325677A5AB5D4533900 /* StoryboardViewControllerResource.swift */,
+				95A6447DAC5C3C363C53BDAC28E8FF70 /* StringResource.swift */,
+				6E0FD446F1512B415E477227A89A5E9A /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				F1C9C9F5541F1087DBA2D0C88E7A451C /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				57914255321F11F140DE905513158250 /* UIColor+ColorResource.swift */,
+				529D396BF094D0C8667F4C2694BD5EDE /* UIFont+FontResource.swift */,
+				EDAC5FA27D3EF80A4DAA9C312CB18AF6 /* UIImage+ImageResource.swift */,
+				428F3651A1B235761D47BF7811DBCFA7 /* UINib+NibResource.swift */,
+				981B42C920BEDC72386A52C7F24990C2 /* UIStoryboard+StoryboardResource.swift */,
+				5207BC4E72C03D702BC551E9A0A8FE14 /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				188655DBF1F850531B58912E9BE1677C /* UITableView+ReuseIdentifierProtocol.swift */,
+				5619386A49119037FD31F489378E5A48 /* UIViewController+NibResource.swift */,
+				788E180E8DEB531808D90818EDA15DF8 /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				58BFD83E7A62CB928C7AEFE2D67C7FFB /* Validatable.swift */,
+				7D8AD7500C19392E0371DC5DE00B08B6 /* Support Files */,
+			);
+			name = R.swift.Library;
+			path = R.swift.Library;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E0F39804065A5BE6F9DD7CB3BE971D2F /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		E11603940B20128FF60DD333EB268EC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8C22A9178BA2EBD48EB1748A020565E /* Pods_Les_Tarots_du_midi.framework */,
+				6861AFED70112E0EC97E329A5F874AB8 /* Pods_LTDMapi.framework */,
+				C9087B979C6A362DADD60ACC4E10CB8B /* Rswift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF8B08C9A784562933EDC212720826A3 /* R.swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = R.swift;
+			path = R.swift;
+			sourceTree = "<group>";
+		};
+		FA0E4581DFCB58A07DA6706C1566C984 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				197EFAAB52DE32F6298688F2D5122A8A /* Pods-Les Tarots du midi */,
+				4A27D38367A6D346E5F2979C95C6DD06 /* Pods-LTDMapi */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37CAF450F4E4D1C8E5952C2C00790AD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67E4104728A1D41CE085B78772AE1FB3 /* R.swift.Library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F888F8BC742974547730C825B3D320 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162A9ED1642C65F528B1261BD3B59A9B /* Pods-Les Tarots du midi-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE587C4F5538654B48BDF60DB97508CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14419A1764B82B06292F236B38221441 /* Pods-LTDMapi-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2771A8300F555EDA4556C1515A6E58B4 /* R.swift.Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7421433D04406F0EF613C095D63A0D6D /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
+			buildPhases = (
+				DD1EF8F362A339C02AB6A61016E5C037 /* Sources */,
+				3FB46749DD06974C3A4D92D35828BFE4 /* Frameworks */,
+				37CAF450F4E4D1C8E5952C2C00790AD0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = R.swift.Library;
+			productName = R.swift.Library;
+			productReference = C9087B979C6A362DADD60ACC4E10CB8B /* Rswift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78089EFFEB555468974AAF639C654DF9 /* Pods-LTDMapi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D174226B4472F0BE299E37A6723752 /* Build configuration list for PBXNativeTarget "Pods-LTDMapi" */;
+			buildPhases = (
+				6F62962EAF2A512732EDE454F53EC4F1 /* Sources */,
+				42D94A77FDE115DBF246F05DEFB4B26E /* Frameworks */,
+				DE587C4F5538654B48BDF60DB97508CB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LTDMapi";
+			productName = "Pods-LTDMapi";
+			productReference = 6861AFED70112E0EC97E329A5F874AB8 /* Pods_LTDMapi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4F0C7A2D2A91D6BA0881284ECD60240 /* Pods-Les Tarots du midi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCF01D911B1EFF8708EE9CEE6680E5B /* Build configuration list for PBXNativeTarget "Pods-Les Tarots du midi" */;
+			buildPhases = (
+				084992EEE9F9BB75FC07CAC09415A525 /* Sources */,
+				6D997B4C2926F49FB8A1F56D721108EB /* Frameworks */,
+				72F888F8BC742974547730C825B3D320 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14B2ED3ECFF5E8B7E07497EF141328D /* PBXTargetDependency */,
+			);
+			name = "Pods-Les Tarots du midi";
+			productName = "Pods-Les Tarots du midi";
+			productReference = B8C22A9178BA2EBD48EB1748A020565E /* Pods_Les_Tarots_du_midi.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E11603940B20128FF60DD333EB268EC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4F0C7A2D2A91D6BA0881284ECD60240 /* Pods-Les Tarots du midi */,
+				78089EFFEB555468974AAF639C654DF9 /* Pods-LTDMapi */,
+				2771A8300F555EDA4556C1515A6E58B4 /* R.swift.Library */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		084992EEE9F9BB75FC07CAC09415A525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1857E6CE4B92B2760FC4DF19C06B96C9 /* Pods-Les Tarots du midi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F62962EAF2A512732EDE454F53EC4F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20C026B9DB1509ED257F1783503FADC /* Pods-LTDMapi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1EF8F362A339C02AB6A61016E5C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9AFD9D7FAFEBD76D986D0A53E581D59 /* Bundle+FileResource.swift in Sources */,
+				70B13DB049B32F528E5A11D0DD71DC5F /* ColorPaletteItemResource+UIKit.swift in Sources */,
+				3558F96151C63C55AB5A52AD37EC343C /* ColorPaletteItemResource.swift in Sources */,
+				F858DDE7DEF734D2F3FA3C3705962B08 /* ColorResource.swift in Sources */,
+				5DA9FE2BFC626204F19A0E2D530934A3 /* Data+FileResource.swift in Sources */,
+				EAA1E601BB4B18E6A3C365F46A3369E7 /* FileResource.swift in Sources */,
+				D7497DF4B9AF2BDE328BA63EB01CC510 /* FontResource.swift in Sources */,
+				937C31AEE17D89C6A87DE336104DB660 /* Identifier.swift in Sources */,
+				E6C3A7A6E9829EF6DC779986EA856E48 /* ImageResource.swift in Sources */,
+				7E6993E9E19A800F4F357D5B7337B525 /* NibResource+UIKit.swift in Sources */,
+				A2624DCC7D4C5F01718D04A89AA453FC /* NibResource.swift in Sources */,
+				7B6BB68931EB34D1461D7C703498EFAC /* R.swift.Library-dummy.m in Sources */,
+				131CE60C6A85EDBB4274D6B921894AD5 /* ReuseIdentifierProtocol.swift in Sources */,
+				58F219E583B1EF5CE1731BA800B71D23 /* StoryboardResource.swift in Sources */,
+				BD973955C623EA61D4E021846412CE69 /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
+				2CBC79554821DEBE064DFC2B14CC3CE8 /* StoryboardSegueIdentifierProtocol.swift in Sources */,
+				B94FC7228DE6E1B00D76068994D8BE22 /* StoryboardViewControllerResource.swift in Sources */,
+				15FCE659A8B900CFE24250583CF2721C /* StringResource.swift in Sources */,
+				9C8AD35A0E74B0681EE3637EDDE3929E /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
+				A3FA955BABE1C31F1260AB6601F6EF0B /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
+				3DC115ED162938A16F9561AE5D0825A2 /* UIColor+ColorResource.swift in Sources */,
+				8C43F9A62CF5F402DD9BDBE76B64A70D /* UIFont+FontResource.swift in Sources */,
+				856B1E95EE8D535ED1402AC2BA74A07C /* UIImage+ImageResource.swift in Sources */,
+				593C2C443774964476E4BC2CA99C6F0E /* UINib+NibResource.swift in Sources */,
+				104571D3C06BAE2EEE87E00399C70914 /* UIStoryboard+StoryboardResource.swift in Sources */,
+				AA1D542971E5866A5BB7BD802C169686 /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
+				B36A34AAD174364806553DC5E7715C7C /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
+				E97B430E26718C16402EF324E7C9418D /* UIViewController+NibResource.swift in Sources */,
+				2493E5CF19FA182CE90691A94F352065 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
+				5D135A54A15C856884D3D6E1FC0D2A76 /* Validatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A14B2ED3ECFF5E8B7E07497EF141328D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = 2771A8300F555EDA4556C1515A6E58B4 /* R.swift.Library */;
+			targetProxy = B3DED6FF246FAB4DFAF3DFBFA4B54132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26F954BA177A9A46FFFD4E23ED11D67A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2C1841B2FA29559AE0B4515A456E8CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E6ECFFF56EB33D9014FF9DEE3927435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F795811E4FCFA4C2FD94DD80180BC3 /* Pods-LTDMapi.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LTDMapi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTDMapi/Pods-LTDMapi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTDMapi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72827389900EA720D07E0BBF5F75F793 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB7DF5200A6E825278AC876529C581FE /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7AC30E0FF6021E4E31475EAD3694AC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D4ABA114EB0A794645D424A18B69EC /* Pods-Les Tarots du midi.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Les Tarots du midi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Les Tarots du midi/Pods-Les Tarots du midi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Les_Tarots_du_midi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D04E014E2361E65D7403F4A315901A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8AE6F00C6F0376BDDCD798772A4D21 /* Pods-LTDMapi.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LTDMapi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTDMapi/Pods-LTDMapi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTDMapi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2BF6D6731C31DE69900B7B24E6F0445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FDC744B9496D2273F95C7C11F880E9F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D58D22E14237893DC4F9631C89D5C8 /* Pods-Les Tarots du midi.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Les Tarots du midi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Les Tarots du midi/Pods-Les Tarots du midi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Les_Tarots_du_midi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BF6D6731C31DE69900B7B24E6F0445 /* Debug */,
+				26F954BA177A9A46FFFD4E23ED11D67A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7421433D04406F0EF613C095D63A0D6D /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1841B2FA29559AE0B4515A456E8CF0 /* Debug */,
+				72827389900EA720D07E0BBF5F75F793 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D174226B4472F0BE299E37A6723752 /* Build configuration list for PBXNativeTarget "Pods-LTDMapi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E6ECFFF56EB33D9014FF9DEE3927435 /* Debug */,
+				D04E014E2361E65D7403F4A315901A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCF01D911B1EFF8708EE9CEE6680E5B /* Build configuration list for PBXNativeTarget "Pods-Les Tarots du midi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC744B9496D2273F95C7C11F880E9F1 /* Debug */,
+				A7AC30E0FF6021E4E31475EAD3694AC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
