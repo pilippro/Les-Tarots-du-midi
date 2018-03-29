@@ -588,9 +588,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="66k-9B-jGU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="66k-9B-jGU" customClass="FLAnimatedImageView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GROS NAZE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2w-Ka-OF3">
+                                <rect key="frame" x="74" y="100" width="227.5" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="0.98878632484094675" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-Fj-rmm">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <connections>
@@ -598,10 +604,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.0013465428826003878" blue="0.77681993126376947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="93D-T8-KB7" firstAttribute="trailing" secondItem="66k-9B-jGU" secondAttribute="trailing" id="32e-05-qX6"/>
+                            <constraint firstItem="Y2w-Ka-OF3" firstAttribute="top" secondItem="93D-T8-KB7" secondAttribute="top" constant="80" id="JoS-VV-nNu"/>
                             <constraint firstItem="fVA-Fj-rmm" firstAttribute="leading" secondItem="93D-T8-KB7" secondAttribute="leading" id="OSK-Mw-Clk"/>
+                            <constraint firstItem="Y2w-Ka-OF3" firstAttribute="centerX" secondItem="fFU-kX-Q6R" secondAttribute="centerX" id="Sw5-e7-fB6"/>
                             <constraint firstItem="93D-T8-KB7" firstAttribute="trailing" secondItem="fVA-Fj-rmm" secondAttribute="trailing" id="ahS-dc-Wg1"/>
                             <constraint firstItem="fVA-Fj-rmm" firstAttribute="top" secondItem="93D-T8-KB7" secondAttribute="top" id="bcD-G7-XDN"/>
                             <constraint firstItem="66k-9B-jGU" firstAttribute="leading" secondItem="93D-T8-KB7" secondAttribute="leading" id="g6F-EG-fdh"/>
@@ -612,7 +620,7 @@
                         <viewLayoutGuide key="safeArea" id="93D-T8-KB7"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="66k-9B-jGU" id="dhK-hf-Qg6"/>
+                        <outlet property="grosNazImageView" destination="66k-9B-jGU" id="suh-Uy-dqa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7h-dl-iqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
