@@ -13,11 +13,6 @@ class DonneViewController: UIViewController {
     @IBOutlet private weak var preneurSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var contratSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var roiAppeleSegmentedControl: UISegmentedControl!
-    @IBOutlet private weak var misereAtoutSegmentedControl: UISegmentedControl!
-    @IBOutlet private weak var misereTeteSegmentedControl: UISegmentedControl!
-    @IBOutlet private weak var poigneeSegmentedControl: UISegmentedControl!
-    @IBOutlet private weak var doublePoigneeSegmentedControl: UISegmentedControl!
-    @IBOutlet private weak var triplePoigneeSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var joueurAppeleSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var petitSwitch: UISwitch!
     @IBOutlet private weak var excuseSwitch: UISwitch!
@@ -41,11 +36,6 @@ class DonneViewController: UIViewController {
         if preneurSegmentedControl != nil,
             contratSegmentedControl != nil,
             roiAppeleSegmentedControl != nil,
-            misereAtoutSegmentedControl != nil,
-            misereTeteSegmentedControl != nil,
-            poigneeSegmentedControl != nil,
-            doublePoigneeSegmentedControl != nil,
-            triplePoigneeSegmentedControl != nil,
             joueurAppeleSegmentedControl != nil,
             petitSwitch != nil,
             excuseSwitch != nil,
@@ -71,19 +61,9 @@ class DonneViewController: UIViewController {
     
     func setupSegmentedControl() {
         preneurSegmentedControl.removeAllSegments()
-        misereAtoutSegmentedControl.removeAllSegments()
-        misereTeteSegmentedControl.removeAllSegments()
-        poigneeSegmentedControl.removeAllSegments()
-        doublePoigneeSegmentedControl.removeAllSegments()
-        triplePoigneeSegmentedControl.removeAllSegments()
         joueurAppeleSegmentedControl.removeAllSegments()
         for index in 0...(donneViewModel.nbPlayers - 1) {
             preneurSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
-            misereAtoutSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
-            misereTeteSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
-            poigneeSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
-            doublePoigneeSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
-            triplePoigneeSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
             joueurAppeleSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
         }
         
