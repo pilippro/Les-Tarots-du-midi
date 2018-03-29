@@ -244,7 +244,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9f-CJ-HPz" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="782.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="771.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLJ-ir-Pop" userLabel="PreneurView">
                                                 <rect key="frame" x="0.0" y="20" width="375" height="96.5"/>
@@ -452,7 +452,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJE-Gq-KZb" userLabel="ScoreView">
-                                                <rect key="frame" x="0.0" y="602.5" width="375" height="110"/>
+                                                <rect key="frame" x="0.0" y="602.5" width="375" height="99"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwP-f8-Mv7">
                                                         <rect key="frame" x="20" y="20" width="53.5" height="21"/>
@@ -463,14 +463,14 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LF3-0j-522">
-                                                        <rect key="frame" x="18" y="60" width="339" height="31"/>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="46" minValue="0.0" maxValue="91" translatesAutoresizingMaskIntoConstraints="NO" id="LF3-0j-522">
+                                                        <rect key="frame" x="18" y="49" width="339" height="31"/>
                                                         <connections>
                                                             <action selector="scoreSlider:" destination="9pv-A4-QxB" eventType="valueChanged" id="ezN-A2-BEP"/>
                                                         </connections>
                                                     </slider>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93v-yw-h2a">
-                                                        <rect key="frame" x="20" y="49" width="100" height="21"/>
+                                                        <rect key="frame" x="20" y="71" width="100" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BzB-xA-VBs"/>
                                                             <constraint firstAttribute="height" constant="21" id="bNs-c9-Yij"/>
@@ -480,7 +480,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-BC-9Pe">
-                                                        <rect key="frame" x="255" y="49" width="100" height="21"/>
+                                                        <rect key="frame" x="255" y="71" width="100" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="IGw-ed-OE3"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="WYa-Tg-6fV"/>
@@ -492,22 +492,22 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="LF3-0j-522" firstAttribute="bottom" secondItem="1hf-BC-9Pe" secondAttribute="top" constant="8" symbolic="YES" id="5v9-Dr-QZp"/>
                                                     <constraint firstItem="LF3-0j-522" firstAttribute="leading" secondItem="VJE-Gq-KZb" secondAttribute="leading" constant="20" symbolic="YES" id="Exa-QT-aeS"/>
                                                     <constraint firstItem="93v-yw-h2a" firstAttribute="leading" secondItem="VJE-Gq-KZb" secondAttribute="leading" constant="20" symbolic="YES" id="Ffv-It-IgQ"/>
                                                     <constraint firstAttribute="bottom" secondItem="LF3-0j-522" secondAttribute="bottom" constant="20" symbolic="YES" id="KPR-BT-YE0"/>
                                                     <constraint firstItem="wwP-f8-Mv7" firstAttribute="leading" secondItem="VJE-Gq-KZb" secondAttribute="leading" constant="20" symbolic="YES" id="MsU-NU-WcP"/>
-                                                    <constraint firstItem="1hf-BC-9Pe" firstAttribute="top" secondItem="wwP-f8-Mv7" secondAttribute="bottom" constant="8" symbolic="YES" id="RNJ-1B-JlL"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wwP-f8-Mv7" secondAttribute="trailing" constant="20" symbolic="YES" id="V3b-bO-qZh"/>
                                                     <constraint firstAttribute="trailing" secondItem="LF3-0j-522" secondAttribute="trailing" constant="20" symbolic="YES" id="cFS-ZW-9FV"/>
                                                     <constraint firstAttribute="trailing" secondItem="1hf-BC-9Pe" secondAttribute="trailing" constant="20" symbolic="YES" id="dKO-F7-4hm"/>
-                                                    <constraint firstItem="LF3-0j-522" firstAttribute="top" secondItem="wwP-f8-Mv7" secondAttribute="top" constant="40" id="iSk-mN-EK2"/>
+                                                    <constraint firstItem="LF3-0j-522" firstAttribute="bottom" secondItem="93v-yw-h2a" secondAttribute="top" constant="8" symbolic="YES" id="jCj-eW-LeC"/>
                                                     <constraint firstItem="wwP-f8-Mv7" firstAttribute="top" secondItem="VJE-Gq-KZb" secondAttribute="top" constant="20" symbolic="YES" id="nx5-am-Ua2"/>
-                                                    <constraint firstItem="93v-yw-h2a" firstAttribute="top" secondItem="wwP-f8-Mv7" secondAttribute="bottom" constant="8" symbolic="YES" id="o5q-2K-enz"/>
                                                     <constraint firstItem="1hf-BC-9Pe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="93v-yw-h2a" secondAttribute="trailing" constant="8" symbolic="YES" id="s8J-YH-v8R"/>
+                                                    <constraint firstItem="LF3-0j-522" firstAttribute="top" secondItem="wwP-f8-Mv7" secondAttribute="bottom" constant="8" symbolic="YES" id="x64-jf-w1k"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-dF-DOZ">
-                                                <rect key="frame" x="20" y="732.5" width="335" height="30"/>
+                                                <rect key="frame" x="20" y="721.5" width="335" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="sN6-dW-5nZ"/>
                                                 </constraints>
