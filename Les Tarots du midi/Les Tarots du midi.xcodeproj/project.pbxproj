@@ -603,7 +603,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B0EC885EF1C4456A54E8F64 /* Pods-Les Tarots du midi.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HWZWWZ9R75;
@@ -620,7 +620,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C2C179D29E45770D563873E /* Pods-Les Tarots du midi.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HWZWWZ9R75;
