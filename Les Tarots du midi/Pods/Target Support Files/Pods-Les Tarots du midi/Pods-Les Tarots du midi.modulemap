@@ -1,6 +1,0 @@
-framework module Pods_Les_Tarots_du_midi {
-  umbrella header "Pods-Les Tarots du midi-umbrella.h"
-
-  export *
-  module * { export * }
-}

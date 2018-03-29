@@ -1,6 +1,0 @@
-framework module Pods_LTDMapi {
-  umbrella header "Pods-LTDMapi-umbrella.h"
-
-  export *
-  module * { export * }
-}
