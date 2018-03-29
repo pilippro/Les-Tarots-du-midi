@@ -33,6 +33,8 @@ class DonneViewController: UIViewController {
     }
     
     func setupView() {
+        attaqueScoreLabel.text = String(Int(round(scoreSlider.value)))
+        defenseScoreLabel.text = String(Int(round(scoreSlider.maximumValue - scoreSlider.value)))
         if preneurSegmentedControl != nil,
             contratSegmentedControl != nil,
             roiAppeleSegmentedControl != nil,
@@ -129,7 +131,8 @@ class DonneViewController: UIViewController {
     }
     
     @IBAction func scoreSlider(_ sender: Any) {
-        // TODO
+        attaqueScoreLabel.text = String(Int(round(scoreSlider.value)))
+        defenseScoreLabel.text = String(Int(round(scoreSlider.maximumValue - scoreSlider.value)))
     }
 
     @IBAction func validateAction(_ sender: Any) {

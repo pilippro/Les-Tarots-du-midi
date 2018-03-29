@@ -59,7 +59,6 @@ class ScoresTableViewController: UITableViewController {
         let newDonne = UIAlertAction(title: "Nouvelle donne", style: .default) { (_) in
             //swiftlint:disable:next force_unwrapping
             let newDonneVC = R.storyboard.main.donneViewController()!
-            newDonneVC.donneViewModel = self.scoresViewModel.donneViewModel()
             self.present(newDonneVC, animated: true, completion: nil)
         }
         alertController.addAction(newDonne)
