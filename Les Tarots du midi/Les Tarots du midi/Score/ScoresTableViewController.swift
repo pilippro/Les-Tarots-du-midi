@@ -90,13 +90,13 @@ extension ScoresTableViewController: PlayersTableViewCellDelegate {
             textfield.placeholder = playerName
         }
         
-        let ok = UIAlertAction(title: "OK", style: .default) { (_) in
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
             let playerName = alertController.textFields?.first?.text
             if playerName != "" {
                 // TODO Save player name at index
             }
         }
-        alertController.addAction(ok)
+        alertController.addAction(okAction)
         
         let cancel = UIAlertAction(title: "Annuler", style: .cancel, handler: nil)
         alertController.addAction(cancel)
