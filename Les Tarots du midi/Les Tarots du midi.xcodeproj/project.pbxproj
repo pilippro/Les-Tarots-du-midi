@@ -27,6 +27,7 @@
 		205799422063DFED009B855A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205799412063DFED009B855A /* R.generated.swift */; };
 		207048EC20613C86006BA5D9 /* DonneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207048EB20613C86006BA5D9 /* DonneViewModel.swift */; };
 		5196E442624B434962C35999 /* Pods_LTDMapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6507B6D587BA25D4FDD551C4 /* Pods_LTDMapi.framework */; };
+		7E8D62AE20701D95007C5DDE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D62AD20701D95007C5DDE /* Model.swift */; };
 		A9A393C456D51F569D62EE01 /* Pods_Les_Tarots_du_midi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C592B934DEE0CE8583414 /* Pods_Les_Tarots_du_midi.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		207048EB20613C86006BA5D9 /* DonneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonneViewModel.swift; sourceTree = "<group>"; };
 		6507B6D587BA25D4FDD551C4 /* Pods_LTDMapi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTDMapi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0EC885EF1C4456A54E8F64 /* Pods-Les Tarots du midi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Les Tarots du midi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Les Tarots du midi/Pods-Les Tarots du midi.debug.xcconfig"; sourceTree = "<group>"; };
+		7E8D62AD20701D95007C5DDE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8C2C179D29E45770D563873E /* Pods-Les Tarots du midi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Les Tarots du midi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Les Tarots du midi/Pods-Les Tarots du midi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +200,7 @@
 				203B776420601BAC006362C0 /* PlayersViewModel.swift */,
 				203B776820601C9B006362C0 /* DonneScoreViewModel.swift */,
 				207048EB20613C86006BA5D9 /* DonneViewModel.swift */,
+				7E8D62AD20701D95007C5DDE /* Model.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				203B776920601C9B006362C0 /* DonneScoreViewModel.swift in Sources */,
 				203B776520601BAC006362C0 /* PlayersViewModel.swift in Sources */,
 				203B776120601B81006362C0 /* TotalScoreViewModel.swift in Sources */,
+				7E8D62AE20701D95007C5DDE /* Model.swift in Sources */,
 				203B776320601B9A006362C0 /* ScoresViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
