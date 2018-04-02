@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ezx-5m-BiF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ezx-5m-BiF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -211,6 +211,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="presentation" identifier="DonneSegueIdentifier" id="R0f-TL-veg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeB-F2-ttB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -264,9 +267,6 @@
                                                             <segment title="First"/>
                                                             <segment title="Second"/>
                                                         </segments>
-                                                        <connections>
-                                                            <action selector="preneurSegmentedControl:" destination="9pv-A4-QxB" eventType="valueChanged" id="UVc-EM-bmO"/>
-                                                        </connections>
                                                     </segmentedControl>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -298,9 +298,6 @@
                                                             <segment title="First"/>
                                                             <segment title="Second"/>
                                                         </segments>
-                                                        <connections>
-                                                            <action selector="contratSegmentedControl:" destination="9pv-A4-QxB" eventType="valueChanged" id="ki8-VW-03I"/>
-                                                        </connections>
                                                     </segmentedControl>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -332,9 +329,6 @@
                                                             <segment title="First"/>
                                                             <segment title="Second"/>
                                                         </segments>
-                                                        <connections>
-                                                            <action selector="roiAppeleSegmentedControl:" destination="9pv-A4-QxB" eventType="valueChanged" id="D12-Gj-7zJ"/>
-                                                        </connections>
                                                     </segmentedControl>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -366,9 +360,6 @@
                                                             <segment title="First"/>
                                                             <segment title="Second"/>
                                                         </segments>
-                                                        <connections>
-                                                            <action selector="joueurAppeleSegmentedControl:" destination="9pv-A4-QxB" eventType="valueChanged" id="4E6-FN-JOF"/>
-                                                        </connections>
                                                     </segmentedControl>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -396,9 +387,6 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBF-YO-KPS">
                                                         <rect key="frame" x="306" y="15" width="51" height="31"/>
-                                                        <connections>
-                                                            <action selector="petitSwitchAction:" destination="9pv-A4-QxB" eventType="valueChanged" id="fl5-FT-M7H"/>
-                                                        </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excuse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwP-u1-fyo">
                                                         <rect key="frame" x="20" y="65.5" width="54.5" height="20.5"/>
@@ -411,9 +399,6 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTC-BG-scf">
                                                         <rect key="frame" x="306" y="60.5" width="51" height="31"/>
-                                                        <connections>
-                                                            <action selector="excuseSwitchAction:" destination="9pv-A4-QxB" eventType="valueChanged" id="jBO-Xq-r9l"/>
-                                                        </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFU-M2-cQi">
                                                         <rect key="frame" x="20" y="111" width="17.5" height="20.5"/>
@@ -426,9 +411,6 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-eR-UoW">
                                                         <rect key="frame" x="306" y="106" width="51" height="31"/>
-                                                        <connections>
-                                                            <action selector="twentyOneSwitchAction:" destination="9pv-A4-QxB" eventType="valueChanged" id="HwJ-4j-gWk"/>
-                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

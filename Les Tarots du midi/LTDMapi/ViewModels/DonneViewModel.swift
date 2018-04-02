@@ -9,49 +9,46 @@ import Foundation
 
 public class DonneViewModel {
 
-    public init() {
+    var donne: Donne?
+    
+    init(donne: Donne?) {
+        self.donne = donne
     }
 
     public var players: [String] {
-        // TODO
-        return ["Joueur 1", "Joueur 2", "Joueur 3", "Joueur 4", "Joueur 5"]
+        return joueurs.map { $0.nom }
     }
     
     public var nbPlayers: Int {
-        return players.count
+        return joueurs.count
     }
     
     public var contrat: [String] {
-        // TODO
-        return ["Petite", "Garde", "Garde sans", "Garde contre"]
+        return Contrat.allValue.map { $0.description }
     }
     
     public var nbContrat: Int {
-        return contrat.count
+        return Contrat.allValue.count
     }
     
     public var colors: [String] {
-        // TODO
-        return ["Carreau", "Coeur", "Pique", "Trèfle"]
+        return Couleur.allValue.map { $0.rawValue }
     }
     
     public var nbColors: Int {
-        return colors.count
+        return Couleur.allValue.count
     }
     
     public var petitIsOwned: Bool {
-        // TODO
-        return false
+        return donne?.petit == .attaque
     }
     
     public var excuseIsOwned: Bool {
-        // TODO
-        return false
+        return donne?.excuse == .attaque
     }
     
     public var twentyOneIsOwned: Bool {
-        // TODO
-        return false
+        return donne?.vingtEtUn == .attaque
     }
     
     public var scoreMinValue: Float {
@@ -63,8 +60,7 @@ public class DonneViewModel {
     }
     
     public var scoreValue: Float {
-        // TODO
-        return 50
+        return Float(donne?.points ?? 50)
     }
     
     public var attaqueScore: String {

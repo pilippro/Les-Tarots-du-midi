@@ -12,24 +12,10 @@ public class TotalScoreViewModel {
     public init() {
     }
     
-    public var firstPlayerScore: String {
-        return "1"
-    }
-    
-    public var secondPlayerScore: String {
-        return "2"
-    }
-    
-    public var thirdPlayerScore: String {
-        return "3"
-    }
-    
-    public var fourthPlayerScore: String {
-        return "4"
-    }
-    
-    public var fifthPlayerScore: String {
-        return "5"
+    public func score(ofPlayer player: Int) -> String {
+        return String(donnes.reduce(0) { result, donne in
+            return result + donne.score(duJoueur: joueurs[player])
+        })
     }
     
 }

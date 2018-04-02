@@ -16,13 +16,13 @@ class TotalScoreTableViewCell: UITableViewCell {
     @IBOutlet private weak var fourthPlayerScoreLabel: UILabel!
     @IBOutlet private weak var fifthPlayerScoreLabel: UILabel!
 
-    var totalScoreViewModel = TotalScoreViewModel() {
+    var totalScoreViewModel: TotalScoreViewModel? {
         didSet {
-            firstPlayerScoreLabel.text = totalScoreViewModel.firstPlayerScore
-            secondPlayerScoreLabel.text = totalScoreViewModel.secondPlayerScore
-            thirdPlayerScoreLabel.text = totalScoreViewModel.thirdPlayerScore
-            fourthPlayerScoreLabel.text = totalScoreViewModel.fourthPlayerScore
-            fifthPlayerScoreLabel.text = totalScoreViewModel.fifthPlayerScore
+            firstPlayerScoreLabel.text = totalScoreViewModel?.score(ofPlayer: 0)
+            secondPlayerScoreLabel.text = totalScoreViewModel?.score(ofPlayer: 1)
+            thirdPlayerScoreLabel.text = totalScoreViewModel?.score(ofPlayer: 2)
+            fourthPlayerScoreLabel.text = totalScoreViewModel?.score(ofPlayer: 3)
+            fifthPlayerScoreLabel.text = totalScoreViewModel?.score(ofPlayer: 4)
         }
     }
 

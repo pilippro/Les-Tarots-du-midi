@@ -10,10 +10,11 @@ import LTDMapi
 
 class ScoresTableViewController: UITableViewController {
 
-    var scoresViewModel = ScoresViewModel() {
-        didSet {
-            self.tableView.reloadData()
-        }
+    var scoresViewModel = ScoresViewModel()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -49,6 +50,7 @@ class ScoresTableViewController: UITableViewController {
 
     @IBAction func resetScores(_ sender: Any) {
         scoresViewModel.resetScores()
+        tableView.reloadData()
     }
     
     @IBAction func new(_ sender: Any) {
@@ -57,9 +59,7 @@ class ScoresTableViewController: UITableViewController {
                                                 preferredStyle: .alert)
         
         let newDonne = UIAlertAction(title: "Nouvelle donne", style: .default) { (_) in
-            //swiftlint:disable:next force_unwrapping
-            let newDonneVC = R.storyboard.main.donneViewController()!
-            self.present(newDonneVC, animated: true, completion: nil)
+            self.performSegue(withIdentifier: R.segue.scoresTableViewController.donneSegueIdentifier, sender: nil)
         }
         alertController.addAction(newDonne)
         
@@ -77,6 +77,13 @@ class ScoresTableViewController: UITableViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let destination = R.segue.scoresTableViewController.donneSegueIdentifier(segue: segue)?.destination {
+            destination.donneViewModel = scoresViewModel.donneViewModel()
+        }
+    }
+    
 }
 
 extension ScoresTableViewController: PlayersTableViewCellDelegate {
@@ -91,9 +98,10 @@ extension ScoresTableViewController: PlayersTableViewCellDelegate {
         }
         
         let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-            let playerName = alertController.textFields?.first?.text
-            if playerName != "" {
-                // TODO Save player name at index
+            if let playerName = alertController.textFields?.first?.text,
+                playerName != "" {
+                self.scoresViewModel.joueur(atIndex: playerIndex, changeNameTo: playerName)
+                self.tableView.reloadData()
             }
         }
         alertController.addAction(okAction)

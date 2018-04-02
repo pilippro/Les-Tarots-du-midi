@@ -12,24 +12,8 @@ public class PlayersViewModel {
     public init() {
     }
     
-    public var firstPlayerName: String {
-        return "Joueur 1"
-    }
-    
-    public var secondPlayerName: String {
-        return "Joueur 2"
-    }
-    
-    public var thirdPlayerName: String {
-        return "Joueur 3"
-    }
-    
-    public var fourthPlayerName: String {
-        return "Joueur 4"
-    }
-    
-    public var fifthPlayerName: String {
-        return "Joueur 5"
+    public func name(at index: Int) -> String {
+        return joueurs[index].nom
     }
     
 }

@@ -13,32 +13,36 @@ public class ScoresViewModel {
     }
     
     public var numberOfDonnes: Int {
-        // TODO
-        return 1
+        return donnes.count
     }
     
     public func playerViewModel() -> PlayersViewModel {
-        // TODO
         return PlayersViewModel()
     }
     
     public func totalScoreViewModel() -> TotalScoreViewModel {
-        // TODO
         return TotalScoreViewModel()
     }
     
     public func donneScoreViewModel(at index: Int) -> DonneScoreViewModel {
-        // TODO
-        return DonneScoreViewModel()
+        return DonneScoreViewModel(donne: donnes[index])
     }
     
     public func donneViewModel() -> DonneViewModel {
-        // TODO
-        return DonneViewModel()
+        return DonneViewModel(donne: nil)
     }
     
     public func resetScores() {
-        // TODO reset everything stored in memory / CORE DATA
+        donnes.removeAll()
+        joueurs = [(nb: 1, nom: "Joueur 1"),
+                   (nb: 2, nom: "Joueur 2"),
+                   (nb: 3, nom: "Joueur 3"),
+                   (nb: 4, nom: "Joueur 4"),
+                   (nb: 5, nom: "Joueur 5")]
+    }
+    
+    public func joueur(atIndex index: Int, changeNameTo name: String) {
+        joueurs[index].nom = name
     }
 
 }

@@ -16,13 +16,13 @@ class DonneScoreTableViewCell: UITableViewCell {
     @IBOutlet private weak var fourthPlayerScoreLabel: UILabel!
     @IBOutlet private weak var fifthPlayerScoreLabel: UILabel!
 
-    var donneScoreViewModel = DonneScoreViewModel() {
+    var donneScoreViewModel: DonneScoreViewModel? {
         didSet {
-            firstPlayerScoreLabel.text = donneScoreViewModel.firstPlayerScore
-            secondPlayerScoreLabel.text = donneScoreViewModel.secondPlayerScore
-            thirdPlayerScoreLabel.text = donneScoreViewModel.thirdPlayerScore
-            fourthPlayerScoreLabel.text = donneScoreViewModel.fourthPlayerScore
-            fifthPlayerScoreLabel.text = donneScoreViewModel.fifthPlayerScore
+            firstPlayerScoreLabel.text = donneScoreViewModel?.score(ofPlayer: 0)
+            secondPlayerScoreLabel.text = donneScoreViewModel?.score(ofPlayer: 1)
+            thirdPlayerScoreLabel.text = donneScoreViewModel?.score(ofPlayer: 2)
+            fourthPlayerScoreLabel.text = donneScoreViewModel?.score(ofPlayer: 3)
+            fifthPlayerScoreLabel.text = donneScoreViewModel?.score(ofPlayer: 4)
         }
     }
 

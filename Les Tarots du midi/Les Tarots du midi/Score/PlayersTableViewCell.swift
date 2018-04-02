@@ -24,11 +24,11 @@ class PlayersTableViewCell: UITableViewCell {
 
     var playersViewModel = PlayersViewModel() {
         didSet {
-            firstPlayerButton.setTitle(playersViewModel.firstPlayerName, for: .normal)
-            secondPlayerButton.setTitle(playersViewModel.secondPlayerName, for: .normal)
-            thirdPlayerButton.setTitle(playersViewModel.thirdPlayerName, for: .normal)
-            fourthPlayerButton.setTitle(playersViewModel.fourthPlayerName, for: .normal)
-            fifthPlayerButton.setTitle(playersViewModel.fifthPlayerName, for: .normal)
+            firstPlayerButton.setTitle(playersViewModel.name(at: 0), for: .normal)
+            secondPlayerButton.setTitle(playersViewModel.name(at: 1), for: .normal)
+            thirdPlayerButton.setTitle(playersViewModel.name(at: 2), for: .normal)
+            fourthPlayerButton.setTitle(playersViewModel.name(at: 3), for: .normal)
+            fifthPlayerButton.setTitle(playersViewModel.name(at: 4), for: .normal)
         }
     }
 

@@ -17,6 +17,8 @@ enum Couleur: String {
     case carreau
     case coeur
     case trefle
+    
+    static let allValue: [Couleur] = [.pique, .carreau, .coeur, .trefle]
 }
 
 enum Contrat: UInt8, CustomStringConvertible {
@@ -45,27 +47,27 @@ typealias Joueur = (nb: UInt8, nom: String)
 
 struct Donne {
     
-    private var nombreJoueurs: UInt8
-    private var prenneur: Joueur
-    private var contrat: Contrat
-    private var couleurAppel: Couleur?
-    private var appelé: Joueur?
+    var nombreJoueurs: UInt8
+    var prenneur: Joueur
+    var contrat: Contrat
+    var couleurAppel: Couleur?
+    var appelé: Joueur?
     
-    private var petit: Equipe
-    private var excuse: Equipe
-    private var vingtEtUn: Equipe
+    var petit: Equipe
+    var excuse: Equipe
+    var vingtEtUn: Equipe
     
-    private var petitAuBout: Equipe?
+    var petitAuBout: Equipe?
     
-    private var poigné: Equipe?
-    private var doublePoigné: Equipe?
-    private var triplePoigné: Equipe?
+    var poigné: Equipe?
+    var doublePoigné: Equipe?
+    var triplePoigné: Equipe?
     
-    private var chelem: Bool
+    var chelem: Bool
     
-    private var points: UInt8
+    var points: UInt8
     
-    private var nbBoutAttaque: UInt8 {
+    var nbBoutAttaque: UInt8 {
         switch (petit, excuse, vingtEtUn) {
         case (.defense, .defense, .defense):
             return 0
@@ -82,7 +84,7 @@ struct Donne {
         return (chelem == false && points >= Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque)) || (chelem && points == 91)
     }
     
-    private var mise: UInt16 {
+    var mise: UInt16 {
         var mise = (25 + UInt16(Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque).distance(to: points))) * UInt16(contrat.rawValue)
         if faite {
             if petitAuBout == .attaque {
@@ -104,7 +106,7 @@ struct Donne {
         return mise
     }
     
-    static private func pointsAFaire(nombreDeBouts: UInt8) -> UInt8 {
+    static func pointsAFaire(nombreDeBouts: UInt8) -> UInt8 {
         switch nombreDeBouts {
         case 1:
             return 51
