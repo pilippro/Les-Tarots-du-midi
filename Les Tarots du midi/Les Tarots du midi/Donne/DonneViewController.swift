@@ -92,4 +92,8 @@ class DonneViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func cancelAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

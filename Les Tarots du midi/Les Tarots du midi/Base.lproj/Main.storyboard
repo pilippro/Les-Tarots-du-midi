@@ -244,10 +244,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5F-ev-hG9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9f-CJ-HPz" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="824"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="784"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLJ-ir-Pop" userLabel="PreneurView">
                                                 <rect key="frame" x="0.0" y="20" width="375" height="96.5"/>
@@ -515,43 +515,52 @@
                                                     <constraint firstItem="LF3-0j-522" firstAttribute="top" secondItem="wwP-f8-Mv7" secondAttribute="bottom" constant="8" symbolic="YES" id="x64-jf-w1k"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-dF-DOZ">
-                                                <rect key="frame" x="20" y="774" width="335" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="sN6-dW-5nZ"/>
-                                                </constraints>
-                                                <state key="normal" title="Valider"/>
-                                                <connections>
-                                                    <action selector="validateAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Cfy-Os-K1W"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-nc-OU2">
+                                                <rect key="frame" x="20" y="734" width="335" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PJ-xQ-9Ue">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="30"/>
+                                                        <state key="normal" title="Cancel"/>
+                                                        <connections>
+                                                            <action selector="cancelAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bqS-cA-OUf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-dF-DOZ">
+                                                        <rect key="frame" x="172.5" y="0.0" width="162.5" height="30"/>
+                                                        <state key="normal" title="Valider"/>
+                                                        <connections>
+                                                            <action selector="validateAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Cfy-Os-K1W"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="VrB-OL-ICl" firstAttribute="top" secondItem="BLJ-ir-Pop" secondAttribute="bottom" constant="8" symbolic="YES" id="34w-x3-ZUU"/>
                                             <constraint firstItem="VrB-OL-ICl" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="3hB-mD-drs"/>
                                             <constraint firstItem="VrB-OL-ICl" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="3iu-zC-54g"/>
-                                            <constraint firstItem="Dhw-dF-DOZ" firstAttribute="top" secondItem="VJE-Gq-KZb" secondAttribute="bottom" constant="20" id="4YW-jG-Ed2"/>
                                             <constraint firstItem="9GE-rn-ViB" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="4iy-Dj-hR9"/>
                                             <constraint firstItem="BLJ-ir-Pop" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="6wq-8k-RcB"/>
                                             <constraint firstItem="9GE-rn-ViB" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="BYg-lv-X8y"/>
                                             <constraint firstItem="VJE-Gq-KZb" firstAttribute="top" secondItem="tmh-gi-BDZ" secondAttribute="bottom" constant="8" symbolic="YES" id="BYx-MW-tBd"/>
                                             <constraint firstItem="yxU-kD-iAO" firstAttribute="bottom" secondItem="9GE-rn-ViB" secondAttribute="top" constant="8" symbolic="YES" id="Eu2-VZ-elN"/>
+                                            <constraint firstItem="Faf-nc-OU2" firstAttribute="leading" secondItem="Q9f-CJ-HPz" secondAttribute="leading" constant="20" symbolic="YES" id="FDv-6M-gfg"/>
                                             <constraint firstItem="yxU-kD-iAO" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="GRk-je-sD7"/>
                                             <constraint firstItem="h4I-7A-FTw" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="KSD-r2-LYk"/>
                                             <constraint firstItem="yxU-kD-iAO" firstAttribute="top" secondItem="VrB-OL-ICl" secondAttribute="bottom" constant="8" symbolic="YES" id="Mlf-31-LDV"/>
                                             <constraint firstItem="tmh-gi-BDZ" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="NPQ-wu-8l9"/>
-                                            <constraint firstAttribute="bottom" secondItem="Dhw-dF-DOZ" secondAttribute="bottom" constant="20" symbolic="YES" id="SHZ-AE-FPM"/>
+                                            <constraint firstAttribute="bottom" secondItem="Faf-nc-OU2" secondAttribute="bottom" constant="20" symbolic="YES" id="O3W-PK-Wl4"/>
                                             <constraint firstItem="VJE-Gq-KZb" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="Uwq-Mi-ino"/>
-                                            <constraint firstItem="Dhw-dF-DOZ" firstAttribute="leading" secondItem="Q9f-CJ-HPz" secondAttribute="leading" constant="20" symbolic="YES" id="V84-pI-2q8"/>
+                                            <constraint firstItem="VJE-Gq-KZb" firstAttribute="bottom" secondItem="Faf-nc-OU2" secondAttribute="top" constant="20" id="Z02-mo-pDQ"/>
                                             <constraint firstItem="h4I-7A-FTw" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="cvQ-9v-bOj"/>
                                             <constraint firstItem="VJE-Gq-KZb" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="hyd-S9-vlQ"/>
                                             <constraint firstItem="h4I-7A-FTw" firstAttribute="top" secondItem="9GE-rn-ViB" secondAttribute="bottom" constant="8" symbolic="YES" id="iay-TF-SYj"/>
-                                            <constraint firstAttribute="trailing" secondItem="Dhw-dF-DOZ" secondAttribute="trailing" constant="20" symbolic="YES" id="mk6-Ib-dfI"/>
                                             <constraint firstItem="BLJ-ir-Pop" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="s5E-DL-lpX"/>
                                             <constraint firstItem="tmh-gi-BDZ" firstAttribute="top" secondItem="h4I-7A-FTw" secondAttribute="bottom" constant="8" symbolic="YES" id="sOy-e7-oPD"/>
                                             <constraint firstItem="BLJ-ir-Pop" firstAttribute="top" secondItem="Q9f-CJ-HPz" secondAttribute="top" constant="20" symbolic="YES" id="t1Y-Dp-Wn4"/>
                                             <constraint firstItem="tmh-gi-BDZ" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="vCG-rZ-cia"/>
+                                            <constraint firstAttribute="trailing" secondItem="Faf-nc-OU2" secondAttribute="trailing" constant="20" symbolic="YES" id="vcl-Xe-uFg"/>
                                             <constraint firstItem="yxU-kD-iAO" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="waI-9g-rgM"/>
                                         </constraints>
                                     </view>
@@ -566,11 +575,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="D5F-ev-hG9" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="ARP-RY-1Rs"/>
                             <constraint firstItem="Q9f-CJ-HPz" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="Aqa-g7-usj"/>
-                            <constraint firstItem="D5F-ev-hG9" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="HF0-Nd-tNj"/>
-                            <constraint firstItem="D5F-ev-hG9" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="McL-az-1kh"/>
-                            <constraint firstItem="D5F-ev-hG9" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" id="ch2-kK-Mxg"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="top" secondItem="D5F-ev-hG9" secondAttribute="top" id="Jp8-Jx-JuL"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="D5F-ev-hG9" secondAttribute="trailing" id="TUj-Vo-SsI"/>
+                            <constraint firstItem="D5F-ev-hG9" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="aJC-Fk-pbX"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="D5F-ev-hG9" secondAttribute="bottom" id="ldG-sA-Gma"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
