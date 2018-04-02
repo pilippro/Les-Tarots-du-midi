@@ -10,6 +10,8 @@ import Foundation
 enum Equipe: String {
     case attaque
     case defense
+    
+    static let allValue: [Equipe] = [.attaque, .defense]
 }
 
 enum Couleur: String {
@@ -85,7 +87,7 @@ struct Donne {
     }
     
     var mise: UInt16 {
-        var mise = (25 + UInt16(Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque).distance(to: points))) * UInt16(contrat.rawValue)
+        var mise = (25 + UInt16(abs(Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque).distance(to: points)))) * UInt16(contrat.rawValue)
         if faite {
             if petitAuBout == .attaque {
                 mise += (10 * UInt16(contrat.rawValue))
@@ -113,7 +115,7 @@ struct Donne {
         case 2:
             return 41
         case 3:
-            return 38
+            return 36
         default:
             return 56
         }
@@ -146,14 +148,18 @@ struct Donne {
             }
         } else if nombreJoueurs == 5 {
             if faite {
-                if joueur == prenneur {
+                if let appelé = appelé, joueur == prenneur && joueur == appelé {
+                    return 4 * Int32(mise)
+                } else if joueur == prenneur {
                     return 2 * Int32(mise)
                 } else if let appelé = appelé, joueur == appelé {
                     return Int32(mise)
                 }
                 return -Int32(mise)
             } else {
-                if joueur == prenneur {
+                if let appelé = appelé, joueur == prenneur && joueur == appelé {
+                    return -4 * Int32(mise)
+                } else if joueur == prenneur {
                     return -2 * Int32(mise)
                 } else if let appelé = appelé, joueur == appelé {
                     return -Int32(mise)

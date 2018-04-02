@@ -50,16 +50,20 @@ class DonneViewController: UIViewController {
             preneurSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
             joueurAppeleSegmentedControl.insertSegment(withTitle: donneViewModel.players[index], at: index, animated: true)
         }
+        preneurSegmentedControl.selectedSegmentIndex = donneViewModel.prenneur
+        joueurAppeleSegmentedControl.selectedSegmentIndex = donneViewModel.appelé
         
         contratSegmentedControl.removeAllSegments()
         for index in 0..<donneViewModel.nbContrat {
-            contratSegmentedControl.insertSegment(withTitle: donneViewModel.contrat[index], at: index, animated: true)
+            contratSegmentedControl.insertSegment(withTitle: donneViewModel.contrats[index], at: index, animated: true)
         }
+        contratSegmentedControl.selectedSegmentIndex = donneViewModel.contrat
         
         roiAppeleSegmentedControl.removeAllSegments()
         for index in 0..<donneViewModel.nbColors {
             roiAppeleSegmentedControl.insertSegment(withTitle: donneViewModel.colors[index], at: index, animated: true)
         }
+        roiAppeleSegmentedControl.selectedSegmentIndex = donneViewModel.roi
     }
     
     @IBAction func scoreSlider(_ sender: Any) {
@@ -68,7 +72,20 @@ class DonneViewController: UIViewController {
     }
   
     @IBAction func validateAction(_ sender: Any) {
-        donneViewModel.computeScore()
+        donneViewModel.computeScore(nombreJoueurs: 5,
+                                    prenneur: preneurSegmentedControl.selectedSegmentIndex,
+                                    contrat: contratSegmentedControl.selectedSegmentIndex,
+                                    couleurAppel: roiAppeleSegmentedControl.selectedSegmentIndex,
+                                    appelé: joueurAppeleSegmentedControl.selectedSegmentIndex,
+                                    petit: petitSwitch.isOn,
+                                    excuse: excuseSwitch.isOn,
+                                    vingtEtUn: twentyOneSwitch.isOn,
+                                    petitAuBout: nil,
+                                    poigné: nil,
+                                    doublePoigné: nil,
+                                    triplePoigné: nil,
+                                    chelem: false,
+                                    points: UInt8(round(scoreSlider.value)))
         self.dismiss(animated: true, completion: nil)
     }
 

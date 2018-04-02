@@ -41,7 +41,7 @@ class ScoresTableViewController: UITableViewController {
         } else {
             //swiftlint:disable:next force_unwrapping
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.donneScoreTableViewCell, for: indexPath)!
-            cell.donneScoreViewModel = scoresViewModel.donneScoreViewModel(at: indexPath.row)
+            cell.donneScoreViewModel = scoresViewModel.donneScoreViewModel(at: indexPath.row - 2)
             return cell
         }
     }
