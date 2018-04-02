@@ -12,6 +12,7 @@ class DonneViewController: UIViewController {
 
     @IBOutlet private weak var preneurSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var contratSegmentedControl: UISegmentedControl!
+    @IBOutlet private weak var chelemSwitch: UISwitch!
     @IBOutlet private weak var roiAppeleSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var joueurAppeleSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var petitSwitch: UISwitch!
@@ -34,6 +35,8 @@ class DonneViewController: UIViewController {
         petitSwitch.isOn = donneViewModel.petitIsOwned
         excuseSwitch.isOn = donneViewModel.excuseIsOwned
         twentyOneSwitch.isOn = donneViewModel.twentyOneIsOwned
+        
+        chelemSwitch.isOn = donneViewModel.chelem
         
         scoreSlider.minimumValue = donneViewModel.scoreMinValue
         scoreSlider.maximumValue = donneViewModel.scoreMaxValue
@@ -84,7 +87,7 @@ class DonneViewController: UIViewController {
                                     poigné: nil,
                                     doublePoigné: nil,
                                     triplePoigné: nil,
-                                    chelem: false,
+                                    chelem: chelemSwitch.isOn,
                                     points: UInt8(round(scoreSlider.value)))
         self.dismiss(animated: true, completion: nil)
     }

@@ -30,6 +30,10 @@ public class DonneViewModel {
     public var contrat: Int {
         return donne?.contrat.hashValue ?? 0
     }
+    
+    public var chelem: Bool {
+        return donne?.chelem ?? false
+    }
 
     public var players: [String] {
         return joueurs.map { $0.nom }
@@ -80,11 +84,11 @@ public class DonneViewModel {
     }
     
     public var attaqueScore: String {
-        return String(scoreValue)
+        return String(Int(scoreValue))
     }
     
     public var defenseScore: String {
-        return String(scoreMaxValue - scoreValue)
+        return String(Int(scoreMaxValue - scoreValue))
     }
     
     //swiftlint:disable:next function_parameter_count
