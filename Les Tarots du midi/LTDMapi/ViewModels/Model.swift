@@ -47,7 +47,11 @@ enum Contrat: UInt8, CustomStringConvertible {
 
 typealias Joueur = (nb: UInt8, nom: String)
 
-struct Donne {
+func == (rhs: Joueur?, lhs: Joueur?) -> Bool {
+    return rhs?.nb == lhs?.nb && rhs?.nom == lhs?.nom
+}
+
+struct Donne: Equatable {
     
     var nombreJoueurs: UInt8
     var prenneur: Joueur
@@ -168,6 +172,23 @@ struct Donne {
             }
         }
         return 0
+    }
+    
+    static func == (rhs: Donne, lhs: Donne) -> Bool {
+        return rhs.nombreJoueurs == lhs.nombreJoueurs &&
+            rhs.prenneur == lhs.prenneur &&
+            rhs.contrat == lhs.contrat &&
+            rhs.couleurAppel == lhs.couleurAppel &&
+            rhs.appelé == lhs.appelé &&
+            rhs.petit == lhs.petit &&
+            rhs.excuse == lhs.excuse &&
+            rhs.vingtEtUn == lhs.vingtEtUn &&
+            rhs.petitAuBout == lhs.petitAuBout &&
+            rhs.poigné == lhs.poigné &&
+            rhs.doublePoigné == lhs.doublePoigné &&
+            rhs.triplePoigné == lhs.triplePoigné &&
+            rhs.chelem == lhs.chelem &&
+            rhs.points == lhs.points
     }
     
 }

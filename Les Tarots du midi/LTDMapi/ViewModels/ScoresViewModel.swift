@@ -28,8 +28,8 @@ public class ScoresViewModel {
         return DonneScoreViewModel(donne: donnes[index])
     }
     
-    public func donneViewModel() -> DonneViewModel {
-        return DonneViewModel(donne: nil)
+    public func donneViewModel(at index: Int?) -> DonneViewModel {
+        return DonneViewModel(donne: index.flatMap { donnes[$0] })
     }
     
     public func resetScores() {

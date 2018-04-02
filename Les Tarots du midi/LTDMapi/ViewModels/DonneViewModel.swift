@@ -111,6 +111,8 @@ public class DonneViewModel {
             //swiftlint:disable:next force_unwrapping
             donnes.append(donne!)
         } else {
+            //swiftlint:disable:next force_unwrapping
+            let indexToRemove = donnes.index { $0 == donne! }!
             donne?.nombreJoueurs = nombreJoueurs
             donne?.prenneur = joueurs[prenneur]
             donne?.contrat = Contrat.allValue[contrat]
@@ -126,7 +128,8 @@ public class DonneViewModel {
             donne?.chelem = chelem
             donne?.points = points
             //swiftlint:disable:next force_unwrapping
-            donnes.append(donne!)
+            donnes.insert(donne!, at: indexToRemove)
+            donnes.remove(at: indexToRemove + 1)
         }
     }
     

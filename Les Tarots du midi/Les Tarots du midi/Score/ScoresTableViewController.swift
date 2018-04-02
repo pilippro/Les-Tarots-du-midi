@@ -45,6 +45,12 @@ class ScoresTableViewController: UITableViewController {
             return cell
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row >= 2 {
+            performSegue(withIdentifier: R.segue.scoresTableViewController.donneSegueIdentifier, sender: indexPath.row)
+        }
+    }
 
     // MARK: - Actions
 
@@ -80,7 +86,11 @@ class ScoresTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if let destination = R.segue.scoresTableViewController.donneSegueIdentifier(segue: segue)?.destination {
-            destination.donneViewModel = scoresViewModel.donneViewModel()
+            if let index = sender as? Int {
+                destination.donneViewModel = scoresViewModel.donneViewModel(at: index - 2)
+            } else {
+                destination.donneViewModel = scoresViewModel.donneViewModel(at: nil)
+            }
         }
     }
     
