@@ -247,7 +247,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9f-CJ-HPz" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="774"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="824"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLJ-ir-Pop" userLabel="PreneurView">
                                                 <rect key="frame" x="0.0" y="20" width="375" height="96.5"/>
@@ -516,7 +516,7 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-nc-OU2">
-                                                <rect key="frame" x="20" y="724" width="335" height="30"/>
+                                                <rect key="frame" x="20" y="774" width="335" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PJ-xQ-9Ue">
                                                         <rect key="frame" x="0.0" y="0.0" width="162.5" height="30"/>
@@ -542,6 +542,7 @@
                                             <constraint firstItem="VrB-OL-ICl" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="3iu-zC-54g"/>
                                             <constraint firstItem="9GE-rn-ViB" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="4iy-Dj-hR9"/>
                                             <constraint firstItem="BLJ-ir-Pop" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="6wq-8k-RcB"/>
+                                            <constraint firstItem="Faf-nc-OU2" firstAttribute="top" secondItem="VJE-Gq-KZb" secondAttribute="bottom" constant="20" id="9ay-4b-Xuv"/>
                                             <constraint firstItem="9GE-rn-ViB" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="BYg-lv-X8y"/>
                                             <constraint firstItem="VJE-Gq-KZb" firstAttribute="top" secondItem="tmh-gi-BDZ" secondAttribute="bottom" constant="8" symbolic="YES" id="BYx-MW-tBd"/>
                                             <constraint firstItem="yxU-kD-iAO" firstAttribute="bottom" secondItem="9GE-rn-ViB" secondAttribute="top" constant="8" symbolic="YES" id="Eu2-VZ-elN"/>
@@ -552,7 +553,6 @@
                                             <constraint firstItem="tmh-gi-BDZ" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="NPQ-wu-8l9"/>
                                             <constraint firstAttribute="bottom" secondItem="Faf-nc-OU2" secondAttribute="bottom" constant="20" symbolic="YES" id="O3W-PK-Wl4"/>
                                             <constraint firstItem="VJE-Gq-KZb" firstAttribute="width" secondItem="Q9f-CJ-HPz" secondAttribute="width" id="Uwq-Mi-ino"/>
-                                            <constraint firstItem="VJE-Gq-KZb" firstAttribute="bottom" secondItem="Faf-nc-OU2" secondAttribute="top" constant="30" id="Z02-mo-pDQ"/>
                                             <constraint firstItem="h4I-7A-FTw" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="cvQ-9v-bOj"/>
                                             <constraint firstItem="VJE-Gq-KZb" firstAttribute="centerX" secondItem="Q9f-CJ-HPz" secondAttribute="centerX" id="hyd-S9-vlQ"/>
                                             <constraint firstItem="h4I-7A-FTw" firstAttribute="top" secondItem="9GE-rn-ViB" secondAttribute="bottom" constant="8" symbolic="YES" id="iay-TF-SYj"/>
