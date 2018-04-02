@@ -37,33 +37,35 @@ enum Contrat: UInt8, CustomStringConvertible {
             return "garde contre"
         }
     }
+    
+    static let allValue: [Contrat] = [.petite, .garde, .gardeSans, .gardeContre]
 }
 
-typealias Joueur = (nb: UInt8, nom: String, score: Int)
+typealias Joueur = (nb: UInt8, nom: String)
 
 struct Donne {
     
-    var nombreJoueurs: UInt8
-    var prenneur: Joueur
-    var contrat: Contrat
-    var couleurAppel: Couleur?
-    var appelé: Joueur?
+    private var nombreJoueurs: UInt8
+    private var prenneur: Joueur
+    private var contrat: Contrat
+    private var couleurAppel: Couleur?
+    private var appelé: Joueur?
     
-    var petit: Equipe
-    var excuse: Equipe
-    var vingtEtUn: Equipe
+    private var petit: Equipe
+    private var excuse: Equipe
+    private var vingtEtUn: Equipe
     
-    var petitAuBout: Equipe?
+    private var petitAuBout: Equipe?
     
-    var poigné: Equipe?
-    var doublePoigné: Equipe?
-    var triplePoigné: Equipe?
+    private var poigné: Equipe?
+    private var doublePoigné: Equipe?
+    private var triplePoigné: Equipe?
     
-    var chelem: Bool
+    private var chelem: Bool
     
-    var points: UInt8
+    private var points: UInt8
     
-    var nbBoutAttaque: UInt8 {
+    private var nbBoutAttaque: UInt8 {
         switch (petit, excuse, vingtEtUn) {
         case (.defense, .defense, .defense):
             return 0
@@ -77,12 +79,29 @@ struct Donne {
     }
     
     var faite: Bool {
-        return points >= Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque)
+        return (chelem == false && points >= Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque)) || (chelem && points == 91)
     }
     
-    var score: UInt8 {
-        //TODO: petit au bout et poigné
-        return (UInt8(25) + UInt8(Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque).distance(to: points))) * contrat.rawValue
+    private var mise: UInt16 {
+        var mise = (25 + UInt16(Donne.pointsAFaire(nombreDeBouts: nbBoutAttaque).distance(to: points))) * UInt16(contrat.rawValue)
+        if faite {
+            if petitAuBout == .attaque {
+                mise += (10 * UInt16(contrat.rawValue))
+            } else if petitAuBout == .defense {
+                mise -= (10 * UInt16(contrat.rawValue))
+            }
+        } else {
+            if petitAuBout == .attaque {
+                mise -= (10 * UInt16(contrat.rawValue))
+            } else if petitAuBout == .defense {
+                mise += (10 * UInt16(contrat.rawValue))
+            }
+        }
+        if poigné != nil { mise += 20 }
+        if doublePoigné != nil { mise += 30 }
+        if triplePoigné != nil { mise += 40 }
+        if chelem { mise += 400 }
+        return mise
     }
     
     static private func pointsAFaire(nombreDeBouts: UInt8) -> UInt8 {
@@ -97,12 +116,58 @@ struct Donne {
             return 56
         }
     }
+    
+    func score(duJoueur joueur: Joueur) -> Int32 {
+        if nombreJoueurs == 3 {
+            if faite {
+                if joueur == prenneur {
+                    return 2 * Int32(mise)
+                }
+                return -Int32(mise)
+            } else {
+                if joueur == prenneur {
+                    return -2 * Int32(mise)
+                }
+                return Int32(mise)
+            }
+        } else if nombreJoueurs == 4 {
+            if faite {
+                if joueur == prenneur {
+                    return 3 * Int32(mise)
+                }
+                return -Int32(mise)
+            } else {
+                if joueur == prenneur {
+                    return -3 * Int32(mise)
+                }
+                return Int32(mise)
+            }
+        } else if nombreJoueurs == 5 {
+            if faite {
+                if joueur == prenneur {
+                    return 2 * Int32(mise)
+                } else if let appelé = appelé, joueur == appelé {
+                    return Int32(mise)
+                }
+                return -Int32(mise)
+            } else {
+                if joueur == prenneur {
+                    return -2 * Int32(mise)
+                } else if let appelé = appelé, joueur == appelé {
+                    return -Int32(mise)
+                }
+                return Int32(mise)
+            }
+        }
+        return 0
+    }
+    
 }
 
 var donnes = [Donne]()
 
-var joueurs: [Joueur] = [(nb: 1, nom: "Joueur 1", score: 0),
-                         (nb: 2, nom: "Joueur 2", score: 0),
-                         (nb: 3, nom: "Joueur 3", score: 0),
-                         (nb: 4, nom: "Joueur 4", score: 0),
-                         (nb: 5, nom: "Joueur 5", score: 0)]
+var joueurs: [Joueur] = [(nb: 1, nom: "Joueur 1"),
+                         (nb: 2, nom: "Joueur 2"),
+                         (nb: 3, nom: "Joueur 3"),
+                         (nb: 4, nom: "Joueur 4"),
+                         (nb: 5, nom: "Joueur 5")]
