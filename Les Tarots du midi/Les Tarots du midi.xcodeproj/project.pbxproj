@@ -185,6 +185,7 @@
 		203B775320601B32006362C0 /* LTDMapi */ = {
 			isa = PBXGroup;
 			children = (
+				7E8D62AD20701D95007C5DDE /* Model.swift */,
 				203B775F20601B60006362C0 /* ViewModels */,
 				203B775420601B32006362C0 /* LTDMapi.h */,
 				203B775520601B32006362C0 /* Info.plist */,
@@ -200,7 +201,6 @@
 				203B776420601BAC006362C0 /* PlayersViewModel.swift */,
 				203B776820601C9B006362C0 /* DonneScoreViewModel.swift */,
 				207048EB20613C86006BA5D9 /* DonneViewModel.swift */,
-				7E8D62AD20701D95007C5DDE /* Model.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
