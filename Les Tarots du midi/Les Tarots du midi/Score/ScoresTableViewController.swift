@@ -82,9 +82,7 @@ class ScoresTableViewController: UITableViewController {
         alertController.addAction(newDonne)
         
         let wrongDonne = UIAlertAction(title: "Fausse donne", style: .default) { (_) in
-            //swiftlint:disable:next force_unwrapping
-            let fausseDonneVC = R.storyboard.main.fausseDonneViewController()!
-            self.present(fausseDonneVC, animated: true, completion: nil)
+            self.performSegue(withIdentifier: R.segue.scoresTableViewController.fausseDonneSegueIdentifier, sender: nil)
         }
         alertController.addAction(wrongDonne)
         
@@ -103,6 +101,8 @@ class ScoresTableViewController: UITableViewController {
             } else {
                 destination.donneViewModel = scoresViewModel.donneViewModel(at: nil)
             }
+        } else if let destination = R.segue.scoresTableViewController.fausseDonneSegueIdentifier(segue: segue)?.destination {
+            print(destination)
         }
     }
     
