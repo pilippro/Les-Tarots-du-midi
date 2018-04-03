@@ -287,17 +287,17 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9f-CJ-HPz" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="824"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="827"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLJ-ir-Pop" userLabel="PreneurView">
                                                 <rect key="frame" x="0.0" y="20" width="375" height="96.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preneur :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfc-yu-nXJ">
-                                                        <rect key="frame" x="20" y="20" width="69.5" height="20.5"/>
+                                                        <rect key="frame" x="20" y="20" width="73" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="iQk-CX-2Dr"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -324,11 +324,11 @@
                                                 <rect key="frame" x="0.0" y="124.5" width="375" height="96.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrat :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vD-TG-ggr">
-                                                        <rect key="frame" x="20" y="20" width="67" height="20.5"/>
+                                                        <rect key="frame" x="20" y="20" width="70.5" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="BiO-no-Wtu"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -355,11 +355,11 @@
                                                 <rect key="frame" x="0.0" y="229" width="375" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chelem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygb-xW-kVI">
-                                                        <rect key="frame" x="20" y="20" width="58.5" height="20.5"/>
+                                                        <rect key="frame" x="20" y="20" width="61" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="VLd-Ud-t4m"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -382,11 +382,11 @@
                                                 <rect key="frame" x="0.0" y="281.5" width="375" height="96.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roi appelé :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1Z-kd-ZJG">
-                                                        <rect key="frame" x="20" y="20" width="89" height="20.5"/>
+                                                        <rect key="frame" x="20" y="20" width="92.5" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="8z3-t7-mA7"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -413,11 +413,11 @@
                                                 <rect key="frame" x="0.0" y="386" width="375" height="96.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joueur appelé :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGL-7Y-fTD">
-                                                        <rect key="frame" x="20" y="20" width="118" height="20.5"/>
+                                                        <rect key="frame" x="20" y="20" width="123" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="4pc-S6-MlT"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -444,11 +444,11 @@
                                                 <rect key="frame" x="0.0" y="490.5" width="375" height="156.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nE1-WS-pcB">
-                                                        <rect key="frame" x="20" y="20" width="35" height="20.5"/>
+                                                        <rect key="frame" x="20" y="20" width="37.5" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="FvS-cv-1KO"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -456,11 +456,11 @@
                                                         <rect key="frame" x="306" y="15" width="51" height="31"/>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excuse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwP-u1-fyo">
-                                                        <rect key="frame" x="20" y="65.5" width="54.5" height="20.5"/>
+                                                        <rect key="frame" x="20" y="65.5" width="57" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="uCx-FP-8F8"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -468,11 +468,11 @@
                                                         <rect key="frame" x="306" y="60.5" width="51" height="31"/>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFU-M2-cQi">
-                                                        <rect key="frame" x="20" y="111" width="17.5" height="20.5"/>
+                                                        <rect key="frame" x="20" y="111" width="18.5" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="TEM-ui-faC"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -504,11 +504,11 @@
                                                 <rect key="frame" x="0.0" y="655" width="375" height="99"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwP-f8-Mv7">
-                                                        <rect key="frame" x="20" y="20" width="53.5" height="21"/>
+                                                        <rect key="frame" x="20" y="20" width="56" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="GbV-YD-EVX"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -524,7 +524,7 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BzB-xA-VBs"/>
                                                             <constraint firstAttribute="height" constant="21" id="bNs-c9-Yij"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -534,7 +534,7 @@
                                                             <constraint firstAttribute="height" constant="21" id="IGw-ed-OE3"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="WYa-Tg-6fV"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -556,17 +556,19 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Faf-nc-OU2">
-                                                <rect key="frame" x="20" y="774" width="335" height="30"/>
+                                                <rect key="frame" x="20" y="774" width="335" height="33"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PJ-xQ-9Ue">
-                                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Annuler"/>
                                                         <connections>
                                                             <action selector="cancelAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bqS-cA-OUf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-dF-DOZ">
-                                                        <rect key="frame" x="172.5" y="0.0" width="162.5" height="30"/>
+                                                        <rect key="frame" x="172.5" y="0.0" width="162.5" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Valider"/>
                                                         <connections>
                                                             <action selector="validateAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Cfy-Os-K1W"/>
