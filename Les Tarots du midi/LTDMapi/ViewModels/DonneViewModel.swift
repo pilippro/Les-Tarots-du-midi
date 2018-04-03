@@ -92,9 +92,9 @@ public class DonneViewModel {
     }
     
     //swiftlint:disable:next function_parameter_count
-    public func computeScore(nombreJoueurs: UInt8, prenneur: Int, contrat: Int, couleurAppel: Int?, appelé: Int?, petit: Bool, excuse: Bool, vingtEtUn: Bool, petitAuBout: Int?, poigné: Int?, doublePoigné: Int?, triplePoigné: Int?, chelem: Bool, points: UInt8) {
+    public func computeScore(prenneur: Int, contrat: Int, couleurAppel: Int?, appelé: Int?, petit: Bool, excuse: Bool, vingtEtUn: Bool, petitAuBout: Int?, poigné: Int?, doublePoigné: Int?, triplePoigné: Int?, chelem: Bool, points: UInt8) {
         if donne == nil {
-            donne = Donne(nombreJoueurs: nombreJoueurs,
+            donne = Donne(nombreJoueurs: UInt8(joueurs.count),
                           prenneur: joueurs[prenneur],
                           contrat: Contrat.allValue[contrat],
                           couleurAppel: couleurAppel.flatMap { Couleur.allValue[$0] },
@@ -113,7 +113,7 @@ public class DonneViewModel {
         } else {
             //swiftlint:disable:next force_unwrapping
             let indexToRemove = donnes.index { $0 == donne! }!
-            donne?.nombreJoueurs = nombreJoueurs
+            donne?.nombreJoueurs = UInt8(joueurs.count)
             donne?.prenneur = joueurs[prenneur]
             donne?.contrat = Contrat.allValue[contrat]
             donne?.couleurAppel = couleurAppel.flatMap { Couleur.allValue[$0] }

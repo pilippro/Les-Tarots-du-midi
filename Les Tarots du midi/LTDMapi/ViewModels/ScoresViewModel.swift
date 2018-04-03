@@ -34,11 +34,11 @@ public class ScoresViewModel {
     
     public func resetScores() {
         donnes.removeAll()
-        joueurs = [(nb: 1, nom: "Joueur 1"),
-                   (nb: 2, nom: "Joueur 2"),
-                   (nb: 3, nom: "Joueur 3"),
-                   (nb: 4, nom: "Joueur 4"),
-                   (nb: 5, nom: "Joueur 5")]
+        joueurs = [(nb: 1, nom: "Joueur1"),
+                   (nb: 2, nom: "Joueur2"),
+                   (nb: 3, nom: "Joueur3"),
+                   (nb: 4, nom: "Joueur4"),
+                   (nb: 5, nom: "Joueur5")]
     }
     
     public func removeDonne(at index: Int) {

@@ -75,8 +75,7 @@ class DonneViewController: UIViewController {
     }
   
     @IBAction func validateAction(_ sender: Any) {
-        donneViewModel.computeScore(nombreJoueurs: 5,
-                                    prenneur: preneurSegmentedControl.selectedSegmentIndex,
+        donneViewModel.computeScore(prenneur: preneurSegmentedControl.selectedSegmentIndex,
                                     contrat: contratSegmentedControl.selectedSegmentIndex,
                                     couleurAppel: roiAppeleSegmentedControl.selectedSegmentIndex,
                                     appelé: joueurAppeleSegmentedControl.selectedSegmentIndex,
