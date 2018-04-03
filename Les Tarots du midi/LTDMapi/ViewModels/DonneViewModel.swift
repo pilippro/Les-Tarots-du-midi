@@ -16,11 +16,11 @@ public class DonneViewModel {
     }
     
     public var prenneur: Int {
-        return Int(donne?.prenneur.nb ?? 0)
+        return max(Int(donne?.prenneur.nb ?? 0) - 1, 0)
     }
     
     public var appelé: Int {
-        return Int(donne?.appelé?.nb ?? 0)
+        return max(Int(donne?.appelé?.nb ?? 0) - 1, 0)
     }
     
     public var roi: Int {
