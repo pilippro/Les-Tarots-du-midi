@@ -41,6 +41,10 @@ public class ScoresViewModel {
                    (nb: 5, nom: "Joueur 5")]
     }
     
+    public func removeDonne(at index: Int) {
+        donnes.remove(at: index)
+    }
+    
     public func joueur(atIndex index: Int, changeNameTo name: String) {
         joueurs[index].nom = name
     }

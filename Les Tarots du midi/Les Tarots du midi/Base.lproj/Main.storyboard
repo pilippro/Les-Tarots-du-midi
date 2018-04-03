@@ -520,7 +520,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PJ-xQ-9Ue">
                                                         <rect key="frame" x="0.0" y="0.0" width="162.5" height="30"/>
-                                                        <state key="normal" title="Cancel"/>
+                                                        <state key="normal" title="Annuler"/>
                                                         <connections>
                                                             <action selector="cancelAction:" destination="9pv-A4-QxB" eventType="touchUpInside" id="bqS-cA-OUf"/>
                                                         </connections>

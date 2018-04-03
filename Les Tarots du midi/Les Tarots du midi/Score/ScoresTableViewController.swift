@@ -51,6 +51,18 @@ class ScoresTableViewController: UITableViewController {
             performSegue(withIdentifier: R.segue.scoresTableViewController.donneSegueIdentifier, sender: indexPath.row)
         }
     }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return indexPath.row >= 2
+    }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Supprimer") { _, indexPath in
+            self.scoresViewModel.removeDonne(at: indexPath.row - 2)
+            self.tableView.reloadData()
+        }
+        return [deleteAction]
+    }
 
     // MARK: - Actions
 
