@@ -14,10 +14,14 @@ class DonneViewController: UIViewController {
     @IBOutlet private weak var contratSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var chelemSwitch: UISwitch!
     @IBOutlet private weak var roiAppeleSegmentedControl: UISegmentedControl!
+    @IBOutlet private weak var poigneSwitch: UISwitch!
+    @IBOutlet private weak var doublePoigneSwitch: UISwitch!
+    @IBOutlet private weak var triplePoigneSwitch: UISwitch!
     @IBOutlet private weak var joueurAppeleSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var petitSwitch: UISwitch!
     @IBOutlet private weak var excuseSwitch: UISwitch!
     @IBOutlet private weak var twentyOneSwitch: UISwitch!
+    @IBOutlet private weak var petitAuBoutSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var scoreSlider: UISlider!
     @IBOutlet private weak var attaqueScoreLabel: UILabel!
     @IBOutlet private weak var defenseScoreLabel: UILabel!
@@ -37,6 +41,10 @@ class DonneViewController: UIViewController {
         twentyOneSwitch.isOn = donneViewModel.twentyOneIsOwned
         
         chelemSwitch.isOn = donneViewModel.chelem
+        
+        poigneSwitch.isOn = donneViewModel.poigne
+        doublePoigneSwitch.isOn = donneViewModel.doublePoigne
+        triplePoigneSwitch.isOn = donneViewModel.triplePoigne
         
         scoreSlider.minimumValue = donneViewModel.scoreMinValue
         scoreSlider.maximumValue = donneViewModel.scoreMaxValue
@@ -67,6 +75,12 @@ class DonneViewController: UIViewController {
             roiAppeleSegmentedControl.insertSegment(withTitle: donneViewModel.colors[index], at: index, animated: true)
         }
         roiAppeleSegmentedControl.selectedSegmentIndex = donneViewModel.roi
+        
+        petitAuBoutSegmentedControl.removeAllSegments()
+        for index in 0..<donneViewModel.equipes.count {
+            petitAuBoutSegmentedControl.insertSegment(withTitle: donneViewModel.equipes[index], at: index, animated: true)
+        }
+        petitAuBoutSegmentedControl.selectedSegmentIndex = donneViewModel.petitAuBout
     }
     
     @IBAction func scoreSlider(_ sender: Any) {
@@ -82,10 +96,10 @@ class DonneViewController: UIViewController {
                                     petit: petitSwitch.isOn,
                                     excuse: excuseSwitch.isOn,
                                     vingtEtUn: twentyOneSwitch.isOn,
-                                    petitAuBout: nil,
-                                    poigné: nil,
-                                    doublePoigné: nil,
-                                    triplePoigné: nil,
+                                    petitAuBout: petitAuBoutSegmentedControl.selectedSegmentIndex,
+                                    poigné: poigneSwitch.isOn,
+                                    doublePoigné: doublePoigneSwitch.isOn,
+                                    triplePoigné: triplePoigneSwitch.isOn,
                                     chelem: chelemSwitch.isOn,
                                     points: UInt8(round(scoreSlider.value)))
         self.dismiss(animated: true, completion: nil)

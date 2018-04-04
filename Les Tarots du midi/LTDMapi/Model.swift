@@ -8,10 +8,11 @@
 import Foundation
 
 enum Equipe: String {
+    case aucune
     case attaque
     case defense
     
-    static let allValue: [Equipe] = [.attaque, .defense]
+    static let allValue: [Equipe] = [.aucune, .attaque, .defense]
 }
 
 enum Couleur: String {
@@ -63,11 +64,11 @@ struct Donne: Equatable {
     var excuse: Equipe
     var vingtEtUn: Equipe
     
-    var petitAuBout: Equipe?
+    var petitAuBout: Equipe
     
-    var poigné: Equipe?
-    var doublePoigné: Equipe?
-    var triplePoigné: Equipe?
+    var poigné: Bool
+    var doublePoigné: Bool
+    var triplePoigné: Bool
     
     var chelem: Bool
     
@@ -75,14 +76,14 @@ struct Donne: Equatable {
     
     var nbBoutAttaque: UInt8 {
         switch (petit, excuse, vingtEtUn) {
-        case (.defense, .defense, .defense):
-            return 0
         case (.attaque, .defense, .defense), (.defense, .attaque, .defense), (.defense, .defense, .attaque):
             return 1
         case (.attaque, .attaque, .defense), (.attaque, .defense, .attaque), (.defense, .attaque, .attaque):
             return 2
         case (.attaque, .attaque, .attaque):
             return 3
+        default:
+            return 0
         }
     }
     
@@ -105,9 +106,9 @@ struct Donne: Equatable {
                 mise += (10 * UInt16(contrat.rawValue))
             }
         }
-        if poigné != nil { mise += 20 }
-        if doublePoigné != nil { mise += 30 }
-        if triplePoigné != nil { mise += 40 }
+        if poigné { mise += 20 }
+        if doublePoigné { mise += 30 }
+        if triplePoigné { mise += 40 }
         if chelem { mise += 400 }
         return mise
     }

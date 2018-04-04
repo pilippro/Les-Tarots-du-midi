@@ -34,6 +34,26 @@ public class DonneViewModel {
     public var chelem: Bool {
         return donne?.chelem ?? false
     }
+    
+    public var poigne: Bool {
+        return donne?.poigné ?? false
+    }
+    
+    public var doublePoigne: Bool {
+        return donne?.doublePoigné ?? false
+    }
+    
+    public var triplePoigne: Bool {
+        return donne?.triplePoigné ?? false
+    }
+    
+    public var equipes: [String] {
+        return Equipe.allValue.map { $0.rawValue }
+    }
+    
+    public var petitAuBout: Int {
+        return donne?.petitAuBout.hashValue ?? 0
+    }
 
     public var players: [String] {
         return joueurs.map { $0.nom }
@@ -92,7 +112,7 @@ public class DonneViewModel {
     }
     
     //swiftlint:disable:next function_parameter_count
-    public func computeScore(prenneur: Int, contrat: Int, couleurAppel: Int?, appelé: Int?, petit: Bool, excuse: Bool, vingtEtUn: Bool, petitAuBout: Int?, poigné: Int?, doublePoigné: Int?, triplePoigné: Int?, chelem: Bool, points: UInt8) {
+    public func computeScore(prenneur: Int, contrat: Int, couleurAppel: Int?, appelé: Int?, petit: Bool, excuse: Bool, vingtEtUn: Bool, petitAuBout: Int, poigné: Bool, doublePoigné: Bool, triplePoigné: Bool, chelem: Bool, points: UInt8) {
         if donne == nil {
             donne = Donne(nombreJoueurs: UInt8(joueurs.count),
                           prenneur: joueurs[prenneur],
@@ -102,10 +122,10 @@ public class DonneViewModel {
                           petit: petit ? Equipe.attaque : Equipe.defense,
                           excuse: excuse ? Equipe.attaque : Equipe.defense,
                           vingtEtUn: vingtEtUn ? Equipe.attaque : Equipe.defense,
-                          petitAuBout: petitAuBout.flatMap { Equipe.allValue[$0] },
-                          poigné: poigné.flatMap { Equipe.allValue[$0] },
-                          doublePoigné: doublePoigné.flatMap { Equipe.allValue[$0] },
-                          triplePoigné: triplePoigné.flatMap { Equipe.allValue[$0] },
+                          petitAuBout: Equipe.allValue[petitAuBout],
+                          poigné: poigné,
+                          doublePoigné: doublePoigné,
+                          triplePoigné: triplePoigné,
                           chelem: chelem,
                           points: points)
             //swiftlint:disable:next force_unwrapping
@@ -121,10 +141,10 @@ public class DonneViewModel {
             donne?.petit = petit ? Equipe.attaque : Equipe.defense
             donne?.excuse = excuse ? Equipe.attaque : Equipe.defense
             donne?.vingtEtUn = vingtEtUn ? Equipe.attaque : Equipe.defense
-            donne?.petitAuBout = petitAuBout.flatMap { Equipe.allValue[$0] }
-            donne?.poigné = poigné.flatMap { Equipe.allValue[$0] }
-            donne?.doublePoigné = doublePoigné.flatMap { Equipe.allValue[$0] }
-            donne?.triplePoigné = triplePoigné.flatMap { Equipe.allValue[$0] }
+            donne?.petitAuBout = Equipe.allValue[petitAuBout]
+            donne?.poigné = poigné
+            donne?.doublePoigné = doublePoigné
+            donne?.triplePoigné = triplePoigné
             donne?.chelem = chelem
             donne?.points = points
             //swiftlint:disable:next force_unwrapping
