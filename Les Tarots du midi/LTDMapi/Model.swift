@@ -66,9 +66,9 @@ struct Donne: Equatable {
     
     var petitAuBout: Equipe
     
-    var poigné: Bool
-    var doublePoigné: Bool
-    var triplePoigné: Bool
+    var poignée: Bool
+    var doublePoignée: Bool
+    var triplePoignée: Bool
     
     var chelem: Bool
     
@@ -106,9 +106,9 @@ struct Donne: Equatable {
                 mise += (10 * UInt16(contrat.rawValue))
             }
         }
-        if poigné { mise += 20 }
-        if doublePoigné { mise += 30 }
-        if triplePoigné { mise += 40 }
+        if poignée { mise += 20 }
+        if doublePoignée { mise += 30 }
+        if triplePoignée { mise += 40 }
         if chelem { mise += 400 }
         return mise
     }
@@ -185,9 +185,9 @@ struct Donne: Equatable {
             rhs.excuse == lhs.excuse &&
             rhs.vingtEtUn == lhs.vingtEtUn &&
             rhs.petitAuBout == lhs.petitAuBout &&
-            rhs.poigné == lhs.poigné &&
-            rhs.doublePoigné == lhs.doublePoigné &&
-            rhs.triplePoigné == lhs.triplePoigné &&
+            rhs.poignée == lhs.poignée &&
+            rhs.doublePoignée == lhs.doublePoignée &&
+            rhs.triplePoignée == lhs.triplePoignée &&
             rhs.chelem == lhs.chelem &&
             rhs.points == lhs.points
     }

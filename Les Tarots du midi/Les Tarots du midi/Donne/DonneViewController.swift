@@ -14,9 +14,9 @@ class DonneViewController: UIViewController {
     @IBOutlet private weak var contratSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var chelemSwitch: UISwitch!
     @IBOutlet private weak var roiAppeleSegmentedControl: UISegmentedControl!
-    @IBOutlet private weak var poigneSwitch: UISwitch!
-    @IBOutlet private weak var doublePoigneSwitch: UISwitch!
-    @IBOutlet private weak var triplePoigneSwitch: UISwitch!
+    @IBOutlet private weak var poigneeSwitch: UISwitch!
+    @IBOutlet private weak var doublePoigneeSwitch: UISwitch!
+    @IBOutlet private weak var triplePoigneeSwitch: UISwitch!
     @IBOutlet private weak var joueurAppeleSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var petitSwitch: UISwitch!
     @IBOutlet private weak var excuseSwitch: UISwitch!
@@ -42,9 +42,9 @@ class DonneViewController: UIViewController {
         
         chelemSwitch.isOn = donneViewModel.chelem
         
-        poigneSwitch.isOn = donneViewModel.poigne
-        doublePoigneSwitch.isOn = donneViewModel.doublePoigne
-        triplePoigneSwitch.isOn = donneViewModel.triplePoigne
+        poigneeSwitch.isOn = donneViewModel.poignee
+        doublePoigneeSwitch.isOn = donneViewModel.doublePoignee
+        triplePoigneeSwitch.isOn = donneViewModel.triplePoignee
         
         scoreSlider.minimumValue = donneViewModel.scoreMinValue
         scoreSlider.maximumValue = donneViewModel.scoreMaxValue
@@ -97,9 +97,9 @@ class DonneViewController: UIViewController {
                                     excuse: excuseSwitch.isOn,
                                     vingtEtUn: twentyOneSwitch.isOn,
                                     petitAuBout: petitAuBoutSegmentedControl.selectedSegmentIndex,
-                                    poigné: poigneSwitch.isOn,
-                                    doublePoigné: doublePoigneSwitch.isOn,
-                                    triplePoigné: triplePoigneSwitch.isOn,
+                                    poignée: poigneeSwitch.isOn,
+                                    doublePoignée: doublePoigneeSwitch.isOn,
+                                    triplePoignée: triplePoigneeSwitch.isOn,
                                     chelem: chelemSwitch.isOn,
                                     points: UInt8(round(scoreSlider.value)))
         self.dismiss(animated: true, completion: nil)

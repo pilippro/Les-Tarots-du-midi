@@ -35,16 +35,16 @@ public class DonneViewModel {
         return donne?.chelem ?? false
     }
     
-    public var poigne: Bool {
-        return donne?.poigné ?? false
+    public var poignee: Bool {
+        return donne?.poignée ?? false
     }
     
-    public var doublePoigne: Bool {
-        return donne?.doublePoigné ?? false
+    public var doublePoignee: Bool {
+        return donne?.doublePoignée ?? false
     }
     
-    public var triplePoigne: Bool {
-        return donne?.triplePoigné ?? false
+    public var triplePoignee: Bool {
+        return donne?.triplePoignée ?? false
     }
     
     public var equipes: [String] {
@@ -112,7 +112,7 @@ public class DonneViewModel {
     }
     
     //swiftlint:disable:next function_parameter_count
-    public func computeScore(prenneur: Int, contrat: Int, couleurAppel: Int?, appelé: Int?, petit: Bool, excuse: Bool, vingtEtUn: Bool, petitAuBout: Int, poigné: Bool, doublePoigné: Bool, triplePoigné: Bool, chelem: Bool, points: UInt8) {
+    public func computeScore(prenneur: Int, contrat: Int, couleurAppel: Int?, appelé: Int?, petit: Bool, excuse: Bool, vingtEtUn: Bool, petitAuBout: Int, poignée: Bool, doublePoignée: Bool, triplePoignée: Bool, chelem: Bool, points: UInt8) {
         if donne == nil {
             donne = Donne(nombreJoueurs: UInt8(joueurs.count),
                           prenneur: joueurs[prenneur],
@@ -123,9 +123,9 @@ public class DonneViewModel {
                           excuse: excuse ? Equipe.attaque : Equipe.defense,
                           vingtEtUn: vingtEtUn ? Equipe.attaque : Equipe.defense,
                           petitAuBout: Equipe.allValue[petitAuBout],
-                          poigné: poigné,
-                          doublePoigné: doublePoigné,
-                          triplePoigné: triplePoigné,
+                          poignée: poignée,
+                          doublePoignée: doublePoignée,
+                          triplePoignée: triplePoignée,
                           chelem: chelem,
                           points: points)
             //swiftlint:disable:next force_unwrapping
@@ -142,9 +142,9 @@ public class DonneViewModel {
             donne?.excuse = excuse ? Equipe.attaque : Equipe.defense
             donne?.vingtEtUn = vingtEtUn ? Equipe.attaque : Equipe.defense
             donne?.petitAuBout = Equipe.allValue[petitAuBout]
-            donne?.poigné = poigné
-            donne?.doublePoigné = doublePoigné
-            donne?.triplePoigné = triplePoigné
+            donne?.poignée = poignée
+            donne?.doublePoignée = doublePoignée
+            donne?.triplePoignée = triplePoignée
             donne?.chelem = chelem
             donne?.points = points
             //swiftlint:disable:next force_unwrapping

@@ -409,11 +409,11 @@
                                                     <constraint firstItem="8iL-ta-AkI" firstAttribute="top" secondItem="q1Z-kd-ZJG" secondAttribute="bottom" constant="8" symbolic="YES" id="rU4-lX-MnH"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HT-KG-EWL" userLabel="PoignéView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HT-KG-EWL" userLabel="PoignéeView">
                                                 <rect key="frame" x="0.0" y="386" width="375" height="156.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poigné" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-jC-WZ2">
-                                                        <rect key="frame" x="20" y="20" width="55" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poignée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-jC-WZ2">
+                                                        <rect key="frame" x="20" y="20" width="64.5" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="LpL-u7-hcC"/>
                                                         </constraints>
@@ -424,8 +424,8 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yA5-lh-bdq">
                                                         <rect key="frame" x="306" y="15" width="51" height="31"/>
                                                     </switch>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Poigné" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63D-HG-rsH">
-                                                        <rect key="frame" x="20" y="65.5" width="116" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Poignée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63D-HG-rsH">
+                                                        <rect key="frame" x="20" y="65.5" width="125.5" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="klY-KR-gF6"/>
                                                         </constraints>
@@ -436,8 +436,8 @@
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lBT-BP-b0g">
                                                         <rect key="frame" x="306" y="60.5" width="51" height="31"/>
                                                     </switch>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triple Poigné" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-Xj-GUJ">
-                                                        <rect key="frame" x="20" y="111" width="104" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Triple Poignée" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-Xj-GUJ">
+                                                        <rect key="frame" x="20" y="111" width="113.5" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="v0N-iF-opO"/>
                                                         </constraints>
@@ -728,16 +728,16 @@
                         <outlet property="chelemSwitch" destination="U4q-VX-Zx6" id="JDQ-Qc-HwX"/>
                         <outlet property="contratSegmentedControl" destination="8J8-cP-ZiU" id="aUj-ML-P6q"/>
                         <outlet property="defenseScoreLabel" destination="1hf-BC-9Pe" id="249-AQ-wc0"/>
-                        <outlet property="doublePoigneSwitch" destination="lBT-BP-b0g" id="0wE-5y-WeE"/>
+                        <outlet property="doublePoigneeSwitch" destination="lBT-BP-b0g" id="NrC-gp-SSa"/>
                         <outlet property="excuseSwitch" destination="WTC-BG-scf" id="yjI-S4-qXe"/>
                         <outlet property="joueurAppeleSegmentedControl" destination="gVu-IL-xqE" id="VSx-y4-TND"/>
                         <outlet property="petitAuBoutSegmentedControl" destination="fUh-7v-h2U" id="S1M-oq-Hso"/>
                         <outlet property="petitSwitch" destination="cBF-YO-KPS" id="akE-UB-YU0"/>
-                        <outlet property="poigneSwitch" destination="yA5-lh-bdq" id="hUJ-QB-Aeo"/>
+                        <outlet property="poigneeSwitch" destination="yA5-lh-bdq" id="NZe-wu-OZp"/>
                         <outlet property="preneurSegmentedControl" destination="Fng-gS-sZs" id="qbD-65-gfm"/>
                         <outlet property="roiAppeleSegmentedControl" destination="8iL-ta-AkI" id="6dP-Mk-fBR"/>
                         <outlet property="scoreSlider" destination="LF3-0j-522" id="qwB-V1-1gt"/>
-                        <outlet property="triplePoigneSwitch" destination="aDJ-vR-N8z" id="zGJ-i7-rXI"/>
+                        <outlet property="triplePoigneeSwitch" destination="aDJ-vR-N8z" id="gYb-Yl-CUc"/>
                         <outlet property="twentyOneSwitch" destination="iHH-eR-UoW" id="7Zh-iu-bQY"/>
                     </connections>
                 </viewController>
