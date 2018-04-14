@@ -4,7 +4,7 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
-  - SwiftLint (0.25.0)
+  - SwiftLint (0.25.1)
 
 DEPENDENCIES:
   - FLAnimatedImage
@@ -12,13 +12,21 @@ DEPENDENCIES:
   - R.swift
   - SwiftLint
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FLAnimatedImage
+    - GiphySwift
+    - R.swift
+    - R.swift.Library
+    - SwiftLint
+
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   GiphySwift: 5ac81e337889464da0fd4fb82c6e79ae42c12c4e
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
 
-PODFILE CHECKSUM: cb99614064359af2989e3be9921554d49ad560d8
+PODFILE CHECKSUM: 816789410366ed08b480bee3cb15366f4fcf4db2
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
