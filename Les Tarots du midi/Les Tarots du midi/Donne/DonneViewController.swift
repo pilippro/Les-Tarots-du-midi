@@ -83,6 +83,16 @@ class DonneViewController: UIViewController {
         petitAuBoutSegmentedControl.selectedSegmentIndex = donneViewModel.petitAuBout
     }
     
+    @IBAction func plusAction(_ sender: UIButton) {
+        scoreSlider.value += 1
+        scoreSlider(scoreSlider)
+    }
+    
+    @IBAction func moinsAction(_ sender: UIButton) {
+        scoreSlider.value -= 1
+        scoreSlider(scoreSlider)
+    }
+    
     @IBAction func scoreSlider(_ sender: Any) {
         attaqueScoreLabel.text = String(Int(round(scoreSlider.value)))
         defenseScoreLabel.text = String(Int(round(scoreSlider.maximumValue - scoreSlider.value)))

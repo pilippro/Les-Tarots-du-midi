@@ -49,7 +49,7 @@ enum Contrat: UInt8, CustomStringConvertible {
 typealias Joueur = (nb: UInt8, nom: String)
 
 func == (rhs: Joueur?, lhs: Joueur?) -> Bool {
-    return rhs?.nb == lhs?.nb && rhs?.nom == lhs?.nom
+    return rhs?.nb == lhs?.nb
 }
 
 struct Donne: Equatable {
